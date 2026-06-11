@@ -1,0 +1,29 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+
+  &.not-edit {
+    height: 25.2px;
+    padding: 0 8px;
+
+    span {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      word-break: keep-all;
+    }
+  }
+
+  &.not-edit:hover {
+    box-sizing: content-box;
+    width: calc(100% - 16px);
+    height: 23.2px;
+    padding: 0 7px;
+    border: 1px solid #383a41;
+    cursor: pointer;
+  }
+}

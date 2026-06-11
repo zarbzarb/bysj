@@ -1,0 +1,91 @@
+.left {
+  height: 100%;
+
+  .title {
+    width: 260px;
+    height: 32px;
+    line-height: 32px;
+    background: rgba(255, 255, 255, 0.04);
+
+    span {
+      padding-left: 20px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  .treeWrap {
+    height: calc(100% - 32px);
+    padding: 10px 10px 10px 20px;
+    overflow: auto;
+    font-family: MicrosoftYaHei, sans-serif; // Sonar add one generic font family
+
+    .searchInput {
+      margin-bottom: 8px;
+      border-radius: 4px;
+    }
+
+    .groupChange {
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .groupInput {
+      height: 29px;
+      padding-left: 0;
+    }
+
+    .groupItem {
+      display: flex;
+      height: 29px;
+      padding: 0 7px;
+      line-height: 29px;
+
+      .groupName {
+        width: 184px;
+      }
+
+      .groupEdit {
+        display: none;
+
+        & > * > * {
+          &:hover {
+            color: #3fb5d2;
+          }
+        }
+      }
+
+      &:hover {
+        .groupEdit {
+          display: block;
+        }
+      }
+    }
+
+    .active {
+      background-color: rgba(255, 255, 255, 0.04);
+    }
+
+    :global {
+      .ant-tree-node-content-wrapper:hover,
+      .ant-tree-node-content-wrapper-normal:hover {
+        background: rgba(0, 0, 0, 1);
+      }
+
+      .ant-tree-node-content-wrapper.ant-tree-node-selected {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .ant-tree-treenode {
+        display: flex;
+        width: 100%;
+
+        .ant-tree-node-content-wrapper {
+          flex: 1 1;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}

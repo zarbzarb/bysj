@@ -1,0 +1,52 @@
+.actionHeader {
+  border: 1px solid transparent !important;
+
+  & > *:nth-child(1) {
+    align-items: center !important;
+    height: 32px;
+    padding: 6px 12px 6px 16px !important;
+    background: #1d212f !important;
+
+    :global {
+      .ant-collapse-expand-icon {
+        padding-right: 4px !important;
+      }
+    }
+  }
+
+  :global {
+    .ant-collapse-content-box {
+      padding: 0 !important;
+    }
+  }
+}
+
+.rightOptions {
+  top: 4px;
+  float: right;
+  margin-top: 2px;
+
+  .delIcon {
+    margin-left: 8px;
+    font-size: 14px;
+
+    &:hover {
+      color: #08b5d8;
+    }
+  }
+}
+
+.vetInput1 {
+  width: 200px !important;
+  height: 22px;
+}
+
+:global {
+  .actionActive {
+    border: 1px solid #fa8c16 !important;
+  }
+
+  .antd-dark .ant-input-affix-wrapper > input.ant-input {
+    border: none !important;
+  }
+}

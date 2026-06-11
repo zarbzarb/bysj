@@ -1,0 +1,42 @@
+:global {
+  .datai-visual-sdk {
+    --yl-scrollbar-size: 6px;
+    --yl-scrollbar-thumb-color: rgba(0, 0, 0, 0.2);
+
+    ::-webkit-scrollbar {
+      width: var(--yl-scrollbar-size);
+      height: var(--yl-scrollbar-size);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--yl-scrollbar-thumb-color);
+    }
+
+    // 树形选择器 - 滚动条样式
+    .ant-select-tree-list-scrollbar-vertical {
+      width: var(--yl-scrollbar-size) !important;
+
+      .ant-select-tree-list-scrollbar-thumb {
+        background: var(--yl-scrollbar-thumb-color) !important;
+      }
+    }
+
+    // 下拉选择器 - 滚动条样式
+    .rc-virtual-list-scrollbar-vertical {
+      width: var(--yl-scrollbar-size) !important;
+
+      .rc-virtual-list-scrollbar-thumb {
+        background: var(--yl-scrollbar-thumb-color) !important;
+      }
+    }
+
+    // 树形列表 - 滚动条样式
+    .ant-tree-list-scrollbar-vertical {
+      width: var(--yl-scrollbar-size) !important;
+
+      .ant-tree-list-scrollbar-thumb {
+        background: var(--yl-scrollbar-thumb-color) !important;
+      }
+    }
+  }
+}

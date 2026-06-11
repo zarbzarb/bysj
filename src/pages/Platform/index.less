@@ -1,0 +1,205 @@
+:global {
+  .menu-config-content {
+    .menu-config-tree {
+      height: 255px;
+      padding: 14px 0 14px 16px;
+
+      .menu-config-tree-wrap {
+        height: 100%; // 默认框体高度
+      }
+
+      .ant-btn-link {
+        padding: 4px 0;
+      }
+
+      .ant-tree {
+        color: #fff;
+        background: transparent;
+
+        .ant-tree-node-content-wrapper.ant-tree-node-selected {
+          background-color: #003579;
+        }
+      }
+
+      .ant-tree-node-content-wrapper {
+        .ant-tree-title {
+          display: flex;
+          align-items: center;
+          height: 30px;
+
+          .menu-tree-node-title {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            white-space: nowrap;
+          }
+
+          .ant-btn-circle {
+            background: transparent;
+            border-color: transparent;
+          }
+        }
+
+        .menu-tree-node-title-edit {
+          height: 30px;
+          color: #fff;
+          background: #000;
+          border: 1px solid #144c8a;
+          border-radius: 4px;
+        }
+
+        .menu-tree-node-move-icon {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &:hover {
+          background-color: #003579;
+        }
+      }
+    }
+
+    .menu-config-footer {
+      height: 60px;
+      padding: 14px 12px;
+      text-align: right;
+      border-top: 1px solid #254182;
+
+      .ant-btn {
+        color: #fff;
+        background: transparent;
+        border: 1px solid #1a70dd;
+        border-radius: 2px;
+
+        &.ant-btn-primary {
+          margin-left: 8px;
+          background: #004296;
+          border: none;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+
+  .layer-tree-select-dropdown {
+    .ant-select-tree-switcher {
+      display: none;
+    }
+  }
+
+  .version-select-wrap {
+    position: relative;
+
+    .version-select-box {
+      &.ant-select-open .ant-select-selector .ant-select-selection-item {
+        img {
+          opacity: 0.25;
+        }
+      }
+
+      .major-icon {
+        // position: relative;
+        // top: 1px;
+        position: absolute;
+        top: 7px;
+        left: 6px;
+        width: 13px;
+        height: 13px;
+        margin-right: 5px;
+      }
+
+      .ant-select-selector {
+        height: 26px !important;
+        padding-left: 0 !important;
+
+        .ant-select-selection-item {
+          padding-left: 20px;
+          line-height: 26px;
+          text-align: left;
+
+          .major-icon {
+            top: 6px;
+            left: 5px;
+          }
+        }
+      }
+
+      .ant-select-arrow {
+        display: none;
+        color: rgba(255, 255, 255, 0.6) !important;
+      }
+
+      .ant-select-dropdown {
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 0;
+
+        .ant-select-item {
+          height: 28px;
+          min-height: 28px;
+          padding-top: 0;
+          padding-bottom: 0;
+          padding-left: 23px;
+          line-height: 28px;
+          border-radius: 0;
+
+          .ant-select-item-option-content {
+            text-align: left;
+          }
+        }
+
+        .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+          background-color: #23495e;
+        }
+      }
+    }
+
+    .select-custom-arrow {
+      position: absolute;
+      top: 10px;
+      right: 8px;
+      width: 9px;
+      height: 6px;
+    }
+  }
+
+  .spin-version-loading {
+    & > div {
+      .ant-spin-spinning {
+        top: 150px !important;
+        z-index: 11;
+
+        .ant-spin-dot-item {
+          background-color: #fff;
+        }
+
+        .ant-spin-text {
+          color: #fff;
+          text-shadow: none;
+        }
+      }
+    }
+
+    .ant-spin-blur {
+      opacity: 1;
+    }
+
+    .ant-spin-blur::after {
+      background: #000;
+      opacity: 0.6;
+    }
+
+    .ant-spin-container::after {
+      background: #000;
+    }
+  }
+
+  // .release-modal {
+  //   .ant-modal-header, .ant-modal-footer {
+  //     &::after, &::before {
+  //       display: none;
+  //     }
+  //   }
+  // }
+}

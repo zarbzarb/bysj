@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="datai-favicon" rel="shortcut icon"  type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<%= publicPath %>css/reset.css" />
+    <title id="datai-title"></title>
+    <style>
+      body {
+        line-height: 1;
+      }
+    
+      #i-loading {
+        background: #fff;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        z-index: 999;
+        transition: all .5s ease-out
+      }
+    
+      #i-loading .loading-center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="testApp"></div>
+
+    <script>
+      window.publicPath = '<%= publicPath %>'; // 运行时前端目录,部署在非根目录下方便查找前端资源
+    </script>
+    <script src="<%= publicPath %>libs/loading.js"></script>
+    <script src="<%= publicPath %>libs/react/react.min.js"></script>
+    <script src="<%= publicPath %>libs/react/react-dom.js"></script>
+  </body>
+
+</html>

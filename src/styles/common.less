@@ -1,0 +1,293 @@
+:global {
+  #app,
+  #preApp,
+  #hookApp,
+  #testApp,
+  .screen-wrap {
+    color: #fff;
+    line-height: 1;
+
+    .marginBottom8 {
+      margin-bottom: 8px;
+    }
+
+    .ant-popover {
+      width: 298px;
+
+      .ant-popover-content {
+        .ant-popover-inner {
+          background: rgba(0, 20, 39, 1);
+          box-shadow: 0 0 6px rgba(4, 122, 140, 0.43);
+
+          .ant-popover-message {
+            color: #fff;
+          }
+
+          .ant-popover-buttons {
+            .ant-btn {
+              min-width: auto;
+              color: rgba(255, 255, 255, 0.6);
+              font-size: 12px;
+              border: none;
+
+              &.ant-btn-sm {
+                height: 20px;
+              }
+            }
+
+            .ant-btn-primary {
+              background: rgba(63, 181, 210, 1);
+              border-radius: 1px;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-popover-placement-top > .ant-popover-content > .ant-popover-arrow,
+    .ant-popover-placement-topLeft > .ant-popover-content > .ant-popover-arrow,
+    .ant-popover-placement-topRight > .ant-popover-content > .ant-popover-arrow {
+      border-right-color: rgba(0, 20, 39, 1);
+      border-bottom-color: rgba(0, 20, 39, 1);
+      box-shadow: 3px 3px 3px rgba(4, 122, 140, 0.43);
+    }
+
+    .ant-tabs {
+      color: #fff;
+    }
+
+    .ant-tabs-bar {
+      border-bottom: 1px solid #171c22;
+    }
+
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+      background: #171c22;
+      border: 1px solid #222936;
+    }
+
+    .ant-card {
+      background: #171c22;
+      border: 1px solid #222936;
+    }
+
+    .ant-card-meta-title {
+      color: #fff;
+    }
+
+    .ant-upload.ant-upload-drag {
+      background: #171c22;
+      border: 1px solid #222936;
+    }
+
+    .ant-upload.ant-upload-drag p.ant-upload-text {
+      color: #fff;
+    }
+
+    .ant-upload-list-item-progress {
+      padding: 0 12px 0 4px;
+    }
+
+    .ant-select-arrow {
+      color: #383a41;
+    }
+
+    .ant-collapse-content {
+      background-color: transparent;
+      border-top: 1px solid #222936;
+    }
+
+    .ant-collapse > .ant-collapse-item {
+      border-bottom: 1px solid transparent;
+    }
+
+    .ant-collapse {
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+
+      .ant-collapse-item {
+        &:last-child {
+          border-radius: 0;
+        }
+
+        & > .ant-collapse-header {
+          color: #fff;
+          border-bottom: #222936;
+          border-radius: 0;
+        }
+
+        & > .ant-collapse-content {
+          border-radius: 0;
+
+          & > .ant-collapse-content-box {
+            padding: 10px 0;
+
+            .ant-row:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-modal {
+      color: #fff;
+
+      & > * {
+        background: transparent;
+      }
+
+      .ant-modal-header {
+        margin-top: 0;
+        padding: 11px 16px;
+        background: #001427;
+        border-bottom: 1px solid #263246;
+      }
+
+      .ant-modal-content {
+        position: relative;
+        padding: 0; // 旧版 antd4.x 没 padding
+        // background: url("~@/assets/newIcon/corner.png") no-repeat -2px -2px;
+        background-color: rgba(0, 20, 39, 1);
+        background-size: auto;
+        border-radius: 0;
+
+        .ant-modal-body {
+          padding: 20px 24px 20px;
+
+          .ant-form-item-required {
+            color: #bcc4cf;
+          }
+
+          .comp-input-content {
+            border: 0 solid;
+          }
+
+          .screen-input {
+            height: 28px;
+            color: #fff;
+            background: rgba(3, 5, 10, 1);
+            border: 1px solid rgba(10, 11, 15, 1);
+            border-radius: 0;
+          }
+        }
+      }
+
+      .ant-modal-footer {
+        margin-top: 0;
+        border-top: 1px solid #001427;
+      }
+
+      .anticon {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    .ant-modal-confirm .ant-modal-body > .anticon {
+      color: #faad14;
+    }
+
+    .ant-modal-confirm .ant-modal-body > .anticon-close-circle {
+      color: #ff4d4f;
+    }
+
+    .ant-modal-confirm .ant-modal-body > .anticon-exclamation-circle {
+      color: #faad14;
+    }
+
+    .data-map-dialog {
+      .data-map-name {
+        margin-bottom: 20px;
+      }
+
+      .data-map-editor {
+        width: 100%;
+      }
+    }
+
+    .media-select {
+      .ant-tabs-tabpane {
+        height: 392px;
+        overflow-y: auto;
+      }
+
+      .media-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30%;
+        height: 120px;
+        margin-bottom: 16px;
+
+        .ant-card-body {
+          padding: 12px;
+          text-align: center;
+        }
+
+        .ant-card-cover {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 140px;
+
+          img {
+            width: auto;
+            max-width: 100%;
+            max-height: 140px;
+          }
+        }
+      }
+
+      .ant-card-hoverable:hover {
+        box-shadow: 0 2px 8px rgba(24, 144, 255, 0.5);
+      }
+    }
+
+    /** 图标通用国色 */
+    .tooltipIcon {
+      margin-left: 6px;
+      color: #3fb5d2;
+      font-size: 14px;
+    }
+
+    /** 子组件帮助样式 */
+    .msgTip {
+      position: absolute;
+      top: 50%;
+      width: 15px;
+      height: 15px;
+      margin-left: 3px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table {
+      border-top: none; // sdk场景重置antd的样式
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+      box-shadow: none; // sdk场景重置antd的样式
+    }
+
+    .comp {
+      & > * {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+    }
+
+    .amap-container {
+      background: none !important;
+    }
+
+    .measures::before {
+      // border-top: 6px solid rgba(151, 55, 55, 0.5) !important;
+      border-top: none !important;
+    }
+
+    .perf-comp {
+      will-change: transform;
+    }
+  }
+}

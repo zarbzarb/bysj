@@ -1,0 +1,537 @@
+import React, { useState, useEffect, useRef } from 'react';
+import { Modal, Table, Select, Input, Row, Col, message } from 'antd';
+import shortId from 'short-uuid';
+import _ from 'lodash';
+import { toJS } from 'mobx';
+import { useStore } from '@/hooks';
+import StoreTree from '@/components/StoreTree';
+import { getDataByKey } from '@/utils/dataStoreUtils';
+import { getDataiBasicChartType, passCurrentValueComps, compDataOptions } from '@/utils/common';
+import iconBtnAdd from '@/assets/newIcon/dataSource/btn_add.png';
+import iconBtnDel from '@/assets/newIcon/dataSource/btn_delete.png';
+import iconBtnSuccess from '@/assets/newIcon/dataSource/btn_sucess.png';
+import iconBtnWarn from '@/assets/newIcon/dataSource/btn_warn.png';
+import PramsSelect from '@/components/PramsSelect';
+import { compatibleChartDynamic } from '../../RefreshDataSource/util';
+import ModalDataSwitch from '../../../Common/ModalDataSwitch';
+import { getOriginalDataFields, groupDataItemOptions } from '../../utils';
+import {
+  unDynamicComps,
+  noDataSourceConfigComps,
+  interactivelyPassInValue,
+  customOptinsComps,
+} from '../../../Common/common';
+import CompTree from '../CompTree';
+import styles from '../index.less';
+import { optionsFn } from './config';
+
+const getComponent = window.DataI.getComponentByKey;
+
+const initUpdateTypeOptions = [
+  { label: '手动输入', value: 1 },
+  { label: '组件数据', value: 2 },
+  { label: '变量', value: 3 },
+  // { label: '交互传入值', value: 4 },
+];
+
+// v8.5.1 添加选项
+const selectedValueOptions = [
+  { label: '当前选中值', value: 1 },
+  { label: '默认数据', value: 0 },
+];
+
+const initParam = {
+  key: shortId.generate(),
+  // 参数项
+  paramType: '',
+  paramItemId: undefined,
+  paramName: '',
+  // 更新方式
+  updateType: 1,
+  // 手动输入的值
+  inputVal: undefined,
+  // 选择的组件
+  compKey: undefined,
+  // 是否当前选中值
+  isSelected: 1,
+  // 组件选中的数据项
+  compDataItem: undefined,
+  // 组件数据项列表
+  compDataItemOptions: [],
+  // 交互传入值
+  interactDataItem: undefined,
+  // 交互传入值选项列表
+  interactDataItemOptions: [],
+  // 变量
+  variableKey: undefined,
+  // 是否数据格式转换 0：不需要转，1：旧格式需要转，2： 转后正确
+  dataSwitch: 0,
+  dataSwitchContent: {
+    code: `//请将返回值以retun方式返回
+return ""`,
+    dimensionMap: [],
+  },
+};
+
+const Index = (props) => {
+  const { visible, onOk, onCancel, comp, action, eventSetting, compKey, triggerCompStatic } = props;
+  const { globalStore } = useStore();
+  const switchComp = useRef();
+  const [updateTypeOptions, setUpdateTypeOptions] = useState(initUpdateTypeOptions);
+  const [params, setParams] = useState([_.cloneDeep(initParam)]); // 默认有一条空的
+  const [paramItemTreeData, setParamItemTreeData] = useState([]);
+  const [switchVisible, setSwitchVisible] = useState(false);
+  const [currentItem, setCurrentItem] = useState({});
+
+  // 解析参数项数据
+  useEffect(() => {
+    const data = _.cloneDeep(triggerCompStatic.data || []);
+    const { dataParams = [] } = action.actionSettings;
+    const tree = [];
+    data.forEach((item) => {
+      tree.push({
+        label: item.name,
+        value: item.mapField || item.key,
+        disabled: dataParams.some((temp) => temp.paramItemId === (item.mapField || item.key)),
+      });
+    });
+
+    setParamItemTreeData(tree);
+  }, [triggerCompStatic]);
+
+  // 添加交互传入值
+  const changeUpdateTypeOptions = () => {
+    interactivelyPassInValue(comp, eventSetting.eventType, () => {
+      const newArr = [...initUpdateTypeOptions];
+      let labelName = '选中值';
+      if (comp.type === 'Input' || comp.type === 'NewInput') {
+        labelName = '输入值';
+      }
+      newArr.push({ label: labelName, value: 4 });
+      setUpdateTypeOptions(newArr);
+    });
+  };
+
+  const okHandler = () => {
+    const empty = params.some((p) => !p.paramItemId);
+    if (empty) {
+      return message.warning('参数项不能为空');
+    }
+    onOk(params);
+  };
+
+  // 新增参数
+  const addParam = () => {
+    const obj = _.cloneDeep(initParam);
+    obj.key = shortId.generate();
+    params.push(obj);
+    setParams([...params]);
+  };
+
+  // 获取组件、交互传入项数据项
+  const _getCompDataItemOptions = (selectedComp, item) => {
+    console.log(selectedComp, 'selectedComp');
+    const v = selectedComp;
+    let options = [];
+    if (
+      item.updateType === 4 && // 特殊事件
+      eventSetting.eventType === 'clickLegend'
+    ) {
+      // 单击图例
+      options = [{ label: '图例名称', value: 'value' }];
+    } else if (customOptinsComps[v.type]) {
+      // 如果特殊组件
+      const myOptions = customOptinsComps[v.type];
+      if (v.type === 'DatePicker') {
+        // 时间选择器
+        return v.props.isRangePicker ? myOptions[1] : myOptions[0];
+      }
+      return myOptions;
+    } else if (v.type === 'Table') {
+      options = compDataOptions(v.key, 'mapField'); // 监听事件使用 mapField, 方便复用更新数据交互设置数据项值逻辑
+    } else {
+      options = compDataOptions(v.key);
+    }
+    console.log('options==>', options);
+    return options;
+  };
+
+  const getCompDataItemOptions = (selectedComp, item, isInteraction = false) => {
+    const options = _getCompDataItemOptions(selectedComp, item);
+    // 点击图例和嵌套环形图，交互传入值，不展示接口数据字段
+    const ignoreOriginalOptions =
+      (isInteraction && eventSetting.eventType === 'clickLegend') ||
+      (isInteraction && comp.englishName === 'ChartNestRing');
+    if (ignoreOriginalOptions) return options;
+    const originalOptions = getOriginalDataFields(selectedComp, toJS(globalStore.screenConfig));
+    return [...options, ...originalOptions];
+  };
+
+  // 选择数据项
+  const paramItemChange = (val, item) => {
+    item.paramItemId = val;
+    item.paramType = val;
+    item.paramName = val;
+    const options = [...paramItemTreeData];
+    // 选过的数据项不能再次选中
+    options.forEach((temp) => {
+      temp.disabled = params.some((p) => p.paramItemId === temp.value);
+    });
+    setParamItemTreeData(options);
+  };
+
+  // 选择更新方式
+  const updateTypeChange = (val, item) => {
+    item.updateType = val;
+    item.compKey = undefined;
+    item.compDataItem = undefined;
+    item.compDataItemOptions = [];
+    item.dataSwitch = 0;
+    item.dataSwitchContent = {
+      code: `//请将返回值以retun方式返回
+return ""`,
+      dimensionMap: [],
+    };
+    if (val === 4) {
+      const options = getCompDataItemOptions(comp, item, true);
+      item.interactDataItemOptions = options;
+    }
+    setParams([...params]);
+  };
+
+  // 手动输入
+  const inputChange = (e, item) => {
+    const { value } = e.target;
+    item.inputVal = value;
+    setParams([...params]);
+  };
+
+  // 选择组件
+  const changeRefComp = (val, item) => {
+    item.compKey = val;
+    item.dataSwitch = 0;
+    item.dataSwitchContent = {
+      code: `//请将返回值以retun方式返回
+return ""`,
+      dimensionMap: [],
+    };
+    const selectedComp = getComponent(val);
+    const options = getCompDataItemOptions(selectedComp, item);
+    console.log(options, 'options');
+    item.compDataItemOptions = options;
+    // v8.5.1 添加当前选中值选项；
+    item.isSelected = 1;
+    item.compDataItem = undefined;
+    setParams([...params]);
+  };
+
+  // v8.5.1 选择是否当前选中值
+  const compIsSelectedChange = (val, item) => {
+    item.isSelected = val;
+    setParams([...params]);
+  };
+
+  // 选择组件数据
+  const compDataItemChange = (val, item) => {
+    item.compDataItem = val;
+    setParams([...params]);
+  };
+
+  // 选择交互区域值
+  const interactDataItemChange = (val, item) => {
+    item.interactDataItem = val;
+    setParams([...params]);
+  };
+
+  // 选择变量
+  const changeVariable = (val, item) => {
+    item.variableKey = val;
+    setParams([...params]);
+  };
+
+  const deleteItem = (item) => {
+    if (item.paramItemId) {
+      // 删除当前item时，已选中的数据项后续可以再选
+      const options = [...paramItemTreeData];
+      for (const temp of options) {
+        if (temp.value === item.paramItemId) {
+          temp.disabled = false;
+          break;
+        }
+      }
+      setParamItemTreeData(options);
+    }
+    if (params.length === 1) {
+      // 最后一条只清空内容
+      const obj = _.cloneDeep(initParam);
+      setParams([obj]);
+    } else {
+      const arr = params.filter((v) => v !== item);
+      setParams(arr);
+    }
+  };
+
+  const showDataSwitch = (item) => {
+    if (!switchComp.current) {
+      switchComp.current = item.updateType === 2 && item.compKey ? getComponent(item.compKey) : comp;
+    }
+    setSwitchVisible(true);
+    setCurrentItem(item);
+  };
+
+  const cancelDataSwitch = () => {
+    setSwitchVisible(false);
+  };
+
+  const confirmDataSwitch = (codeData, param, dynamic) => {
+    let options = [];
+    if (Array.isArray(codeData)) {
+      options = dynamic.dataMap.map((d) => ({
+        label: d.name,
+        value: d.key,
+      }));
+    }
+    if (param.updateType === 2) {
+      param.compDataItemOptions = options;
+    } else if (param.updateType === 4) {
+      param.interactDataItemOptions = options;
+    }
+    setSwitchVisible(false);
+  };
+
+  const getPopupContainer = () => document.querySelector('.edit-container');
+
+  useEffect(() => {
+    if (visible) {
+      changeUpdateTypeOptions();
+      if (action.actionSettings.dataParams?.length) {
+        const oldParams = action.actionSettings.dataParams;
+        // 再次打开弹窗时，更新组件数据和交互传入值可选项
+        if (oldParams[0].updateType === 2 && oldParams[0].compKey) {
+          const selectedComp = getComponent(oldParams[0].compKey);
+          console.log(selectedComp, 'selectedComp', oldParams);
+          if (selectedComp) {
+            const options = getCompDataItemOptions(selectedComp, oldParams[0]);
+            // console.log(options, 'options');
+            oldParams[0].compDataItemOptions = options;
+            const index = options.findIndex((item) => oldParams[0].compDataItem === item.value);
+            if (index === -1) {
+              oldParams[0].compDataItem = '';
+            }
+          } else {
+            oldParams[0].compKey = undefined;
+            oldParams[0].compDataItem = undefined;
+            oldParams[0].compDataItemOptions = [];
+          }
+        } else if (oldParams[0].updateType === 4) {
+          const options = getCompDataItemOptions(comp, oldParams[0], true);
+          oldParams[0].interactDataItemOptions = options;
+          const index = options.findIndex((item) => oldParams[0].interactDataItem === item.value);
+          if (index === -1) {
+            oldParams[0].interactDataItem = '';
+          }
+        }
+
+        setParams([...oldParams]);
+      }
+    }
+  }, [visible, action]);
+
+  const columns = [
+    {
+      title: '数据项',
+      width: 200,
+      render: (text, item, i) => {
+        return (
+          <div style={{ display: 'flex' }}>
+            {text.required && <span style={{ color: '#ff4d4f', paddingTop: '8px' }}>*</span>}
+
+            <PramsSelect
+              treeSelectProps={{
+                style: { width: '100%' },
+              }}
+              comp={getComponent(compKey)}
+              value={item.paramItemId}
+              onChange={(val) => paramItemChange(val, item)}
+            />
+          </div>
+        );
+      },
+    },
+    {
+      title: '数据来源',
+      width: 500,
+      render: (text, item, i) => {
+        // v8.5.1 添加是否显示当前选中值选项判断条件
+        let hasType = false;
+        if (item.compKey) {
+          const selectedComp = getComponent(item.compKey);
+          if (selectedComp) {
+            hasType = passCurrentValueComps.has(selectedComp.type);
+          }
+        }
+        return (
+          <Row>
+            <Col span={7}>
+              <Select
+                placeholder='请选择更新方式'
+                getPopupContainer={getPopupContainer}
+                style={{
+                  width: 150,
+                }}
+                value={item.updateType}
+                onChange={(val) => updateTypeChange(val, item)}
+                options={updateTypeOptions}
+              />
+            </Col>
+            <Col span={17} style={{ left: 2 }}>
+              {item.updateType === 1 && (
+                <Input
+                  placeholder='请输入更改数据'
+                  style={{ height: '100%' }}
+                  value={item.inputVal}
+                  onChange={(val) => inputChange(val, item)}
+                />
+              )}
+              {item.updateType === 2 && (
+                <Row>
+                  <Col span={10}>
+                    <CompTree
+                      // customComps={customComps}
+                      comp={comp}
+                      type='compData' // 不能选择图层和组
+                      relation={item.compKey}
+                      onTreeChange={(val) => changeRefComp(val, item)}
+                      getPopupContainer={getPopupContainer}
+                    />
+                  </Col>
+                  <Col span={14}>
+                    {/* v8.5.1 添加是否当前选中值 */}
+                    {hasType && (
+                      <Select
+                        placeholder=''
+                        getPopupContainer={getPopupContainer}
+                        style={{
+                          marginLeft: 2,
+                          width: 106,
+                        }}
+                        value={item.isSelected === undefined ? 1 : item.isSelected}
+                        onChange={(val) => compIsSelectedChange(val, item)}
+                        options={selectedValueOptions}
+                      />
+                    )}
+                    <Select
+                      placeholder='请选择组件的数据'
+                      getPopupContainer={getPopupContainer}
+                      style={{
+                        marginLeft: 2,
+                        width: hasType ? 106 : 216,
+                      }}
+                      value={item.compDataItem}
+                      onChange={(val) => compDataItemChange(val, item)}
+                      options={groupDataItemOptions(item.compDataItemOptions)}
+                    />
+                    {item.dataSwitch > 0 ? (
+                      <img
+                        className={styles.switchIcon}
+                        src={item.dataSwitch === 1 ? iconBtnWarn : iconBtnSuccess}
+                        onClick={() => showDataSwitch(item)}
+                        alt=''
+                      />
+                    ) : null}
+                  </Col>
+                </Row>
+              )}
+              {item.updateType === 3 && (
+                <StoreTree
+                  value={item.variableKey}
+                  onChange={(val) => changeVariable(val, item)}
+                  getPopupContainer={getPopupContainer}
+                />
+              )}
+              {item.updateType === 4 && (
+                <>
+                  <Select
+                    placeholder='请选择交互区域的值'
+                    getPopupContainer={getPopupContainer}
+                    style={{
+                      width: '320px',
+                    }}
+                    // dropdownStyle={{
+                    //   maxHeight: 200,
+                    // }}
+                    value={item.interactDataItem}
+                    onChange={(val) => interactDataItemChange(val, item)}
+                    options={groupDataItemOptions(item.interactDataItemOptions)}
+                  />
+                  {item.dataSwitch > 0 ? (
+                    <img
+                      className={styles.switchIcon}
+                      src={item.dataSwitch === 1 ? iconBtnWarn : iconBtnSuccess}
+                      onClick={() => showDataSwitch(item)}
+                      alt=''
+                    />
+                  ) : null}
+                </>
+              )}
+            </Col>
+          </Row>
+        );
+      },
+    },
+    {
+      title: '操作',
+      align: 'center',
+      width: 100,
+      render: (text, item, i) => {
+        return (
+          <>
+            {i === params.length - 1 ? (
+              <img
+                className={styles.operationIcon}
+                style={{ marginRight: 10 }}
+                src={iconBtnAdd}
+                alt=''
+                onClick={addParam}
+              />
+            ) : null}
+            <img className={styles.operationIcon} src={iconBtnDel} alt='' onClick={() => deleteItem(item)} />
+          </>
+        );
+      },
+    },
+  ];
+
+  return (
+    <Modal
+      className='antd-dark'
+      getContainer={getPopupContainer}
+      maskClosable={false}
+      title='编辑参数'
+      width={900}
+      open={visible}
+      onOk={okHandler}
+      onCancel={onCancel}
+    >
+      <Table
+        className={styles.editorParamsTable}
+        pagination={false}
+        dataSource={params}
+        columns={columns}
+        scroll={params.length > 8 ? { y: 320 } : null}
+        bordered
+      />
+      {switchVisible && (
+        <ModalDataSwitch
+          visible={switchVisible}
+          param={currentItem}
+          comp={switchComp.current}
+          onOk={confirmDataSwitch}
+          onCancel={cancelDataSwitch}
+        />
+      )}
+    </Modal>
+  );
+};
+
+export default Index;

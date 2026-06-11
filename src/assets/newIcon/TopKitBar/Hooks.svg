@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hook</title>
+    <g id="孔雀设计器界面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.7">
+        <g id="配置项组件样式-2024" transform="translate(-532, -937)" fill="#53BBCE" fill-rule="nonzero">
+            <g id="下拉菜单备份-10" transform="translate(33, 919)">
+                <g id="编组-2备份" transform="translate(399, 13)">
+                    <g id="hook" transform="translate(88, 0)">
+                        <g transform="translate(12, 5)" id="形状结合">
+                            <path d="M11.4481346,0 C12.4199951,1.6 15.026969,5.504 16,7 L11.4481346,14 L4.55147525,14 L0,7 L4.55147525,0 L11.4481346,0 Z M10,8 C10,9.1045695 9.1045695,10 8,10 C6.8954305,10 6,9.1045695 6,8 L4,8 C4,10.209139 5.790861,12 8,12 C10.209139,12 12,10.209139 12,8 C12,6.13643475 10.7256022,4.57052105 9.00076134,4.12621352 L9,2 L7,2 L6.99992752,6.26760632 L7,6.266 L7,6 L8,6 C9.1045695,6 10,6.8954305 10,8 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+.selectEventTypeDiv {
+  margin-top: 12px;
+  text-align: center;
+
+  & > * {
+    width: 309px;
+    line-height: 24px;
+
+    :global {
+      .ant-select-selection-placeholder {
+        line-height: 26px;
+      }
+
+      .ant-select-selection-search-input {
+        height: 28px;
+      }
+    }
+  }
+}
+
+:global {
+  .ant-select-item-option-disabled {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+}

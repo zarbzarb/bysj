@@ -1,0 +1,106 @@
+.pickColorWrap {
+  :global {
+    .sketch-picker {
+      position: relative !important;
+      width: 240px !important;
+    }
+  }
+
+  .colorCardWrap {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .handle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 -8px;
+    margin-top: 5px;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    .checkboxWrap {
+      display: flex;
+      transform: scale(0.8);
+    }
+
+    :global {
+      .anticon:hover {
+        color: rgba(0, 0, 0, 0.55);
+      }
+    }
+  }
+}
+
+.adjustWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .colorRatioWrap {
+    width: 100%;
+
+    .colorRatioItemWrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-;
+
+      .colorCard {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+      }
+
+      :global {
+        .ant-slider {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  span {
+    color: #515a6e;
+  }
+
+  :global {
+    .ant-slider {
+      width: 100%;
+    }
+  }
+}
+
+.pop,
+.pop_2 {
+  z-index: 1071 !important;
+
+  :global {
+    .ant-popover-inner-content {
+      padding-right: 25px;
+      padding-left: 25px;
+      font-size: 12px;
+
+      .ant-slider-mark {
+        font-size: 12px;
+      }
+    }
+
+    .ant-popover-arrow {
+      border-right-color: #fff !important;
+      border-bottom-color: #fff !important;
+    }
+
+    .ant-tooltip {
+      z-index: 1072 !important;
+
+      .ant-tooltip-inner {
+        font-size: 12px;
+      }
+    }
+  }
+}

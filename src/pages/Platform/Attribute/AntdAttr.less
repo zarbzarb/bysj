@@ -1,0 +1,436 @@
+.demo {
+  height: calc(100vh - 124px);
+  // margin-top: 12px;
+  overflow-y: auto;
+  color: #fff;
+  background: #0d0f17;
+
+  .field {
+    align-items: center;
+    width: 100%;
+    // margin-bottom: 21px;
+    padding: 10px 0;
+
+    .fieldLabel {
+      padding-right: 6px;
+      padding-left: 12px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .antdFieldInput {
+      & > div {
+        width: 100%;
+      }
+    }
+
+    .fieldInput {
+      padding-right: 13px;
+    }
+  }
+
+  :global {
+    .custom-collapse {
+      div[class*='field_'] {
+        padding: 7px 0;
+
+        div[class*='fieldInput_'] {
+          font-size: 14px;
+
+          .ant-radio-wrapper {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .fieldBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 24px;
+    margin-bottom: 21px;
+    padding: 0 12px 0 7px;
+
+    .fieldLabel {
+      display: inline-block;
+      max-width: 120px;
+      overflow: hidden;
+      font-size: 14px;
+      line-height: 24px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .sizeField {
+    .twoInput {
+      width: 80px;
+      margin-right: 0;
+      // &:nth-child(1) {
+      //   margin-bottom: 8px;
+      // }
+      &:nth-child(odd) {
+        margin-right: 16px;
+      }
+    }
+
+    & > * {
+      width: 80px;
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .opacityField {
+    & > * {
+      &:nth-child(1) {
+        float: left;
+        width: 80px;
+      }
+
+      &:nth-child(2) {
+        width: 80px;
+      }
+    }
+  }
+
+  .overflowField {
+    & > * {
+      width: 100%;
+    }
+  }
+
+  .borderField {
+    & > * {
+      &:nth-child(1) {
+        width: 100%;
+        margin-right: 16px;
+        margin-bottom: 14px;
+      }
+
+      &:nth-child(2) {
+        float: left;
+        width: 47px;
+        margin-right: 0;
+        margin-right: 12px;
+
+        :global {
+          .color-preview {
+            float: left;
+          }
+        }
+
+        input {
+          width: 50px;
+        }
+      }
+
+      &:nth-child(3) {
+        float: left;
+        width: 87px;
+        margin-right: 12px;
+
+        :global {
+          .color-preview {
+            float: left;
+          }
+        }
+
+        input {
+          width: 50px;
+        }
+      }
+    }
+  }
+
+  .borderRadiusField {
+    & > * {
+      &:nth-child(1) {
+        width: 87px;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .paddingField {
+    & > * {
+      width: 87px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .marginField {
+    & > * {
+      width: 87px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .alignField {
+    & > * {
+      margin-right: 8px;
+      color: #56575c;
+      font-size: 22px;
+      cursor: pointer;
+
+      &.active,
+      &:hover {
+        color: #3fb5d2;
+      }
+    }
+  }
+
+  .fieldShadow {
+    & > * {
+      margin-right: 8px;
+      font-size: 24px;
+    }
+  }
+
+  .shadowModalPanel {
+    width: 200px;
+  }
+
+  .flexCol {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .maxLengthInput {
+      width: 100px;
+      margin: auto 10px auto 24px;
+    }
+  }
+}
+
+:global {
+  .antd-dark {
+    .condition-drawer {
+      .ant-collapse .ant-collapse-content .ant-collapse-content [class*='fieldLabel'] {
+        padding-left: 14px !important;
+      }
+
+      .ant-collapse-content {
+        font-size: 14px;
+      }
+
+      .ant-drawer-body {
+        padding: 8px;
+      }
+
+      .ant-drawer-content {
+        background-color: #0d0f17;
+      }
+
+      .ant-collapse {
+        .ant-row {
+          margin-bottom: 8px;
+
+          .ant-col {
+            font-size: 14px !important;
+
+            span {
+              font-size: 14px !important;
+            }
+          }
+        }
+      }
+
+      .ant-drawer-content-wrapper {
+        padding-bottom: 50px;
+      }
+    }
+
+    .ant-select {
+      .ant-select-selector {
+        .ant-select-selection-item {
+          color: #a1aeb3;
+          font-size: 14px;
+        }
+      }
+
+      .ant-select-selection-item-content {
+        color: #a1aeb3;
+      }
+
+      &.ant-select-open {
+        //#3fb5d2
+        .ant-select-selector {
+          border-color: #3fb5d2 !important;
+        }
+      }
+    }
+
+    .ant-input {
+      background: #03050a;
+      border: 1px solid #383a41;
+      border-radius: 1px;
+    }
+
+    .ant-collapse {
+      width: 100%;
+      // background: transparent !important;
+      // border-color: transparent !important;
+
+      // .ant-collapse-content-box {
+      //   padding: 16px 0;
+      // }
+      // v6.19.0 新增
+      .card-market-panel-1 {
+        .ant-collapse-content {
+          .ant-collapse-header {
+            border-bottom: 1px solid #5a575780 !important;
+          }
+
+          .ant-collapse-content-box {
+            padding: 0 !important;
+          }
+
+          .card-market-panel-2 {
+            // 二级
+            .ant-collapse-header {
+              padding-left: 45px;
+
+              .anticon {
+                left: 24px;
+              }
+            }
+
+            .card-market-panel-3 {
+              // 三级
+              .ant-collapse-header {
+                padding-left: 55px !important;
+
+                .anticon {
+                  left: 34px;
+                }
+              }
+            }
+
+            .card-market-panel-4 {
+              // 四级
+              .ant-collapse-header {
+                padding-left: 65px !important;
+
+                .anticon {
+                  left: 44px;
+                }
+              }
+            }
+
+            .card-market-panel-5 {
+              // 五级
+              .ant-collapse-header {
+                padding-left: 75px !important;
+
+                .anticon {
+                  left: 54px;
+                }
+              }
+            }
+          }
+        }
+
+        .isleaf-panel {
+          .ant-collapse-header {
+            padding-left: 45px;
+
+            .anticon {
+              left: 24px;
+            }
+          }
+
+          .ant-collapse-content-box {
+            padding: 16px 0 !important;
+          }
+        }
+
+        .ant-collapse {
+          padding-bottom: 0 !important;
+        }
+      }
+
+      // .ant-collapse-header {
+      //   color: #fff !important;
+      //   background: #0d0f17;
+      //   border-width: 1px;
+      // }
+
+      // .ant-collapse-content {
+      //   color: #a5b3b8;
+      //   background: #171a21 !important;
+
+      //   .ant-form {
+      //     color: #a5b3b8;
+      //   }
+
+      //   .ant-collapse-header {
+      //     color: #fff !important;
+      //     background: #171a21 !important;
+      //     border-width: 0;
+      //   }
+
+      //   .ant-collapse-content {
+      //     background: #171a21 !important;
+      //     border-top: 0 !important;
+      //     //三级
+      //     .ant-collapse-header {
+      //       color: #a5b3b8;
+      //       background: #171a21 !important;
+      //       border-width: 0;
+      //     }
+      //   }
+
+      //   .ant-tabs {
+      //     color: #a5b3b8;
+      //   }
+      // }
+    }
+  }
+
+  .component-attr-bar {
+    width: 100%;
+
+    & > * {
+      width: 33%;
+      text-align: center;
+    }
+    margin-bottom: 12px;
+  }
+
+  .attr-item-label {
+    color: #3d4966;
+  }
+
+  .props-editor {
+    float: right;
+    width: 354px;
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
+    background: white;
+  }
+
+  .editor {
+    position: relative;
+
+    .editButton {
+      position: absolute;
+      right: 7px;
+      bottom: 3px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .CodeMirror {
+      height: 500px;
+    }
+  }
+}

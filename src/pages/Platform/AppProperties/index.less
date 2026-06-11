@@ -1,0 +1,187 @@
+.AppPropertiesContainer {
+  position: relative;
+  z-index: 10;
+  width: 354px;
+  height: calc(100vh - 74px);
+  overflow-y: auto;
+  background: #0d0f17;
+  box-shadow: -1px 0 #000;
+  transition: width 0.25s ease-in-out;
+
+  .topTitle {
+    position: relative;
+    height: 42px;
+    padding: 0;
+    color: #238bff;
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .field {
+    display: flex;
+    align-items: unset;
+    width: 100%;
+    margin-bottom: 12px;
+
+    .fieldLabel {
+      padding-left: 12px;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    .fieldValue {
+      & * {
+        font-size: 12px;
+      }
+      padding-right: 16px;
+    }
+
+    .antdFieldInput {
+      & > div {
+        width: 100%;
+      }
+    }
+
+    .fieldInput {
+      & > * {
+        font-size: 12px;
+      }
+      padding-right: 16px;
+    }
+  }
+
+  :global {
+    .yl-transition-tabs {
+      position: fixed;
+      box-sizing: border-box;
+      width: 212px;
+      height: 30px;
+      margin-top: 325px;
+      padding: 8px 0 4px 5px;
+      background-color: #13161a;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+
+      .yl-transition-tab {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+
+        &:nth-child(2) {
+          margin-left: 28px;
+        }
+      }
+    }
+
+    .copyright {
+      line-height: 20px;
+    }
+  }
+}
+
+.preLoadResourcesSelect {
+  :global {
+    .ant-select-selector {
+      .ant-select-selection-item {
+        // width: 100%;
+        width: 170px;
+        height: 20px;
+        background: #25363b;
+        border-radius: 4px;
+
+        .ant-select-selection-item-content {
+          width: 100%;
+          color: #fff;
+          font-size: 14px;
+          font-family: MicrosoftYaHei, sans-serif;
+          font-style: normal;
+          line-height: 16px;
+          text-align: left;
+        }
+
+        .ant-select-selection-item-remove > .anticon-close {
+          width: 20px;
+          height: 18px;
+
+          &::before {
+            display: inline-block;
+            width: 18px; /* 设置图标宽度 */
+            height: 18px; /* 设置图标高度 */
+            content: url('~@/assets/newIcon/MinusCircleOutlined.png');
+          }
+
+          & > svg {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .ant-select-arrow {
+      svg {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.preLoadResourcesPopupClassName {
+  background: #03050a;
+  border: 1px solid #2d9cb8;
+
+  :global {
+    .rc-virtual-list-holder {
+      .ant-select-item-option {
+        align-items: center;
+        padding: 5px 8px 5px 0;
+        color: rgba(255, 255, 255, 1);
+        font-size: 14px;
+        font-family: MicrosoftYaHei, sans-serif;
+        font-style: normal;
+        line-height: 16px;
+        text-align: left;
+        // background-color: #03050a;
+        background-color: #11191c;
+
+        .ant-select-item-option-content {
+          order: 1;
+        }
+
+        .ant-select-item-option-state {
+          order: 0;
+
+          .anticon {
+            margin: auto 8px;
+            border: 1px dashed #007693;
+
+            & > svg {
+              width: 14px;
+              height: 14px;
+              color: #3dece9;
+            }
+          }
+        }
+
+        &.ant-select-item-option-selected {
+          font-style: normal;
+          background-color: #11191c;
+        }
+
+        &:hover {
+          background-color: #194753;
+        }
+
+        &:not(.ant-select-item-option-selected)::before {
+          flex: none;
+          width: 16px;
+          height: 16px;
+          margin: auto 8px;
+          border: 1px dashed #007693;
+          content: '';
+        }
+      }
+    }
+  }
+}

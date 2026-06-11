@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="datai-favicon" href="<%= publicPath %>favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title id="datai-title">孔雀设计器</title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+            background: #313233;
+            min-width: 1000px;
+            min-height: 1200px;
+            font-family: 'PingFang SC','Microsoft YaHei','Helvetica Neue',Arial,sans-serif!important;
+            font-size: 12px;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        html {
+          overflow-x: hidden;
+          overflow-y: visible;
+        }
+        
+        #app {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <script>
+      window.publicPath = '<%= publicPath %>';
+    </script>
+    
+    <% if(process.env.NODE_ENV === 'production') { %>
+      <script src="<%= publicPath %>libs/react/react.min.js"></script>
+      <script src="<%= publicPath %>libs/react/react-dom.js"></script>
+    <% } else { %>
+      <script src="<%= publicPath %>libs/react/react.development.js"></script>
+      <script src="<%= publicPath %>libs/react/react-dom.development.js"></script>
+    <% } %>
+  </body>
+
+</html>

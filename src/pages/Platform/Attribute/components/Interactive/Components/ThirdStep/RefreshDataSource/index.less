@@ -1,0 +1,93 @@
+.refreshDataSourceContainer {
+  padding: 12px 23px 12px;
+  color: rgba(255, 255, 255, 0.7);
+
+  .dataSourceValueRow {
+    margin-top: 8px;
+
+    .editorParamsBtn {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: 26px;
+      background: rgba(20, 81, 122, 0.5);
+      border: 1px solid rgba(26, 114, 166, 1);
+      border-radius: 1px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #08b5d8;
+        background: rgba(118, 198, 234, 0.28) !important;
+        border-color: #08b5d8;
+      }
+
+      .successIcon {
+        position: absolute;
+        top: 4px;
+        right: 10px;
+        width: 16px;
+        height: 16px;
+      }
+
+      &.success {
+        border: 1px solid #4bd49a;
+      }
+    }
+  }
+}
+.apiInterfaceName {
+  padding-bottom: 10px;
+}
+.editorParamsTable {
+  .switchIcon {
+    position: relative;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .operationIcon {
+    width: 16px;
+    cursor: pointer;
+  }
+
+  :global {
+    .ant-table {
+      background-color: #0d2e3f !important;
+    }
+
+    .ant-modal .ant-table.ant-table-bordered .ant-table-container {
+      border: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > thead > tr > th {
+      border-right: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table.ant-table-small thead > tr > th {
+      text-align: center;
+      background-color: #0d2e3f !important;
+      border-bottom: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > tbody > tr > td {
+      border-right: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table tbody > tr > td {
+      border-bottom: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table tbody > tr.ant-table-row:hover > td {
+      background-color: #0d2e3f !important;
+    }
+
+    .ant-table tbody .ant-input::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}

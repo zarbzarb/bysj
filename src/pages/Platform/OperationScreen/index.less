@@ -1,0 +1,212 @@
+.operation {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  background: #1d2124;
+
+  li {
+    flex-shrink: 0;
+    min-width: 28px;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid #1d2124;
+
+    &:hover {
+      background: #0f1014;
+      border: 1px solid #373942;
+      border-radius: 2px;
+    }
+
+    &:nth-of-type(1) {
+      &:hover {
+        background: #1d2124;
+        border: 1px solid #1d2124;
+        border-radius: 2px;
+      }
+    }
+
+    &.filterBtn {
+      &:hover {
+        background: transparent;
+        border-color: transparent;
+      }
+    }
+
+    .swicth {
+      float: right;
+      width: 34px;
+      min-width: 34px;
+      height: 16px;
+      margin: 4px 0 0 6px;
+      line-height: 16px;
+
+      :global {
+        .ant-switch-handle {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+
+    :global {
+      .ant-select-selection-placeholder,
+      .ant-select-selector .ant-select-selection-item {
+        text-align: left !important;
+      }
+
+      .ant-switch.ant-switch-checked {
+        background-color: #3fb5d2;
+
+        .ant-switch-handle {
+          left: calc(100% - 12px - 2px);
+        }
+      }
+
+      .filterConfig {
+        position: absolute;
+        top: 30px;
+        z-index: 99999;
+        width: 332px;
+        height: 365px;
+        padding-top: 10px;
+        background: #1d2124;
+        border-radius: 2px;
+        box-shadow: 0 -2px 9px 0 rgba(15, 15, 16, 0.89);
+
+        img {
+          width: 7px;
+          height: 7px;
+        }
+      }
+
+      .yl-comp-config {
+        .yl-comp-text-field {
+          padding: 10px 0;
+
+          .yl-comp-field-label {
+            width: 93px;
+            min-width: 93px;
+            height: 30px;
+            padding-left: 20px;
+            line-height: 30px;
+            text-align: left;
+          }
+
+          .yl-comp-field-content {
+            width: 260px;
+            margin-left: 0;
+            padding-right: 20px;
+
+            .comp-input {
+              margin: 0 15px;
+            }
+          }
+
+          .yl-comp-field-unit {
+            width: 150px;
+            height: 30px;
+            margin-left: -20px;
+            line-height: 30px;
+          }
+        }
+
+        .footer {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 48px;
+          line-height: 48px;
+          text-align: left;
+          background: #262c33;
+          border-radius: 2px;
+
+          div {
+            display: inline-block;
+
+            &:first-of-type {
+              display: none;
+              margin: 0 10px 0 44px;
+              color: #08b5d8;
+
+              span {
+                margin-right: 5px;
+              }
+            }
+
+            &:nth-of-type(2) {
+              float: right;
+              width: 56px;
+              height: 29px;
+              margin: 10px 24px 0 0;
+              color: #3fb5d2;
+              line-height: 29px;
+              text-align: center;
+              border: 1px solid #08b5d8;
+              border-radius: 1px;
+              cursor: pointer;
+            }
+            // &:last-of-type{
+            //   margin-right: 24px;
+            //   float: right;
+            // }
+          }
+        }
+      }
+    }
+
+    > span {
+      width: 28px;
+      height: 28px;
+      border: 1px solid #373942;
+      border-radius: 2px;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .font {
+      width: 24px;
+      height: 24px;
+      margin-right: 6px;
+    }
+
+    &.active {
+      height: 28px;
+      margin: 5px 10px 5px 0;
+      line-height: 28px;
+      background: #0f1014;
+      border: 1px solid #373942;
+    }
+  }
+
+  .filterBtn {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+
+    & > span {
+      width: 60px;
+      height: auto;
+      border: none;
+    }
+
+    .swicth {
+      margin-top: 0;
+      margin-left: 6px;
+    }
+  }
+
+  .divid {
+    height: 28px;
+    background: #0d0d0e;
+  }
+
+  .disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    user-select: none;
+  }
+}

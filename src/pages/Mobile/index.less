@@ -1,0 +1,224 @@
+:global {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .preview-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    .preview-area {
+      display: flex;
+      flex: 5;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      overflow: hidden;
+      text-align: right;
+
+      .iframe-wp {
+        position: relative;
+        margin: 30px;
+
+        .iframe-width {
+          position: absolute;
+          top: -42px;
+          width: 100%;
+          padding-bottom: 10px;
+          color: #aaa;
+          font-style: italic;
+          line-height: 18px;
+          text-align: center;
+          text-shadow: 0 0 3px #000;
+          border-right: 1px solid #888;
+          border-bottom: 1px dashed #555;
+          border-left: 1px solid #888;
+          user-select: none;
+        }
+
+        .iframe-height {
+          position: absolute;
+          top: 0;
+          left: -42px;
+          height: 100%;
+          padding-left: 10px;
+          color: #aaa;
+          font-style: italic;
+          line-height: 18px;
+          text-align: center;
+          text-shadow: 0 0 3px #000;
+          border-top: 1px solid #888;
+          border-bottom: 1px solid #888;
+          border-left: 1px dashed #555;
+          writing-mode: vertical-rl;
+          transform: rotateZ(180deg);
+          user-select: none;
+        }
+
+        .mobile-page {
+          box-sizing: content-box;
+          border: 2px solid #666;
+          box-shadow: 0 0 12px -4px #000;
+          transition: 0.2s;
+        }
+      }
+    }
+
+    .config-area {
+      display: flex;
+      flex: 6;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100%;
+      overflow: hidden;
+      color: #bcc9d4;
+
+      .config-sec {
+        padding-bottom: 10px;
+
+        p {
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
+      }
+
+      .config-sec:not(:first-child) {
+        margin-top: 30px;
+      }
+
+      .mobile-type {
+        .datav-radio-group {
+          max-width: 400px;
+        }
+
+        .layout-item {
+          margin-right: 15px;
+          line-height: 28px;
+        }
+
+        .mobile-config-title {
+          margin-top: 20px;
+          margin-bottom: 15px;
+          padding-left: 12px;
+          color: #fff;
+          border-left: 3px solid #2681ff;
+        }
+      }
+
+      .mobile-config {
+        position: relative;
+        margin-left: 30px;
+        padding: 20px;
+        background: #3a3c3e;
+        border-radius: 2px;
+        box-shadow: 0 0 12px -9px #000;
+        transition: 0.2s;
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-image: linear-gradient(270deg, #00deff 0, #2681ff 74%);
+          content: '';
+        }
+
+        .mobile-config-layout-tip {
+          margin-top: 12px;
+          font-size: 12px !important;
+          opacity: 0.5;
+        }
+
+        .mobile-config-title {
+          margin-top: 20px;
+          padding-left: 12px;
+          color: #fff;
+          border-left: 3px solid #2681ff;
+        }
+
+        .cation-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .qrcode-wp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        .qrcode-item {
+          margin: 0 40px;
+
+          .qrcode-img {
+            border: 3px solid #89bbde;
+            border-radius: 1px;
+            box-shadow: 0 0 12px -6px #000;
+          }
+
+          .qrcode-title {
+            margin-top: 10px;
+            text-shadow: 0 0 2px #000;
+          }
+        }
+      }
+    }
+
+    &.--iphone-xs {
+      .mobile-page {
+        width: 375px;
+        height: 812px;
+      }
+    }
+
+    &.--iphone-xr {
+      .mobile-page {
+        width: 414px;
+        height: 896px;
+      }
+    }
+
+    &.--iphone-14 {
+      .mobile-page {
+        width: 393px;
+        height: 852px;
+      }
+    }
+
+    &.--iphone-14-pro-max {
+      .mobile-page {
+        width: 430px;
+        height: 932px;
+      }
+    }
+
+    &.--huawei-mate60 {
+      .mobile-page {
+        width: 378px;
+        height: 816px;
+      }
+    }
+
+    &.--xiaomi-14 {
+      .mobile-page {
+        width: 360px;
+        height: 801px;
+      }
+    }
+
+    &.--redmi-k70 {
+      .mobile-page {
+        width: 432px;
+        height: 960px;
+      }
+    }
+  }
+}

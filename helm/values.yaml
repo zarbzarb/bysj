@@ -1,0 +1,41 @@
+imageRegistry: registry.cn-beijing.aliyuncs.com/yunli
+imagePullSecrets:
+  - name: yunli-ioc
+ReplicasMin: 1
+ServiceMode: ClusterIP
+resources:
+  limits:
+    cpu: 500m
+    memory: 128Mi
+  requests:
+    cpu: 200m
+    memory: 128Mi
+
+nginx:
+  enabled: false
+  proxy:
+    - location: /api
+      proxy_pass: http://yunli-api-gateway.ioc-mid-apps.svc:8080
+    - location: ^~/gis/
+      proxy_pass: http://mid-platform-gisservice-nginx.ioc-mid-apps/gis/
+    - location: /auth
+      proxy_pass: http://ioc-auth-server:9999
+    - location: ^~/gis-platform/
+      proxy_pass: http://gis-public-platform-nginx.ioc-mid-apps/
+    - location: ^~/iocoss/
+      proxy_pass: http://minio8-headless.ioc-mid-apps:9000/
+    - location: /storage/
+      proxy_pass: http://ioc-basic-storage:9999
+    - location: /-
+      proxy_pass: http://172.22.0.60:4873/-
+
+#域名配置
+ingress:
+  #开启需要改成true
+  enabled: true
+  #是否启用https 开启需要改成true
+  tls: false
+  #若开启，需确保域名的唯一性。若要访问该域名，需将domain加入本地host配置中
+  domain: visual.inner.ioc
+
+appVersion: '2.0.0-test'

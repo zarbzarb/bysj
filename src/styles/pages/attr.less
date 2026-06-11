@@ -1,0 +1,205 @@
+.field {
+  padding: 10px 0;
+
+  .fieldLabel {
+    padding-left: 12px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.colDouble {
+  .leftCol {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
+  }
+
+  .rightCol {
+    display: inline-block;
+    width: 45%;
+  }
+}
+
+:global {
+  .child-bar-back {
+    font-size: 12px;
+  }
+
+  .yl-base-config-title {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 8px;
+    color: #bcc9d4;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    background: #2e343c;
+    user-select: none;
+  }
+
+  .yl-comp-tabs {
+    display: flex;
+    width: 100%;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.04);
+
+    .yl-comp-tab {
+      position: relative;
+      display: flex;
+      flex: 1;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 7px;
+      color: #fff;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      &:hover,
+      &.active {
+        background: rgba(13, 15, 23, 1);
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #3fb5d2;
+          content: '';
+        }
+      }
+    }
+  }
+
+  .yl-comp-input-twin {
+    flex: 12;
+  }
+
+  .yl-comp-input-twin + .yl-comp-input-twin {
+    padding-left: 8px;
+  }
+
+  .ant-col:has(.yl-comp-input-twin) {
+    display: flex;
+    padding-right: 13px;
+  }
+
+  .yl-comp-config {
+    .yl-comp-text-field {
+      position: relative;
+      display: flex;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px 0;
+      color: #a1aeb3;
+      font-size: 14px;
+      transition: all 0.3s ease-in-out;
+
+      .yl-comp-field-label {
+        width: 137px;
+
+        height: 24px;
+        padding-right: 6px;
+        padding-left: 12px;
+        overflow: hidden;
+        color: #fff;
+        line-height: 24px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        .anticon-question-circle {
+          color: rgb(63, 181, 210);
+        }
+      }
+
+      .yl-comp-field-content {
+        position: relative;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 213px;
+        padding-right: 13px;
+        font-size: 14px;
+
+        .yl-transition-tabs {
+          position: fixed;
+          box-sizing: border-box;
+          width: 212px;
+          height: 30px;
+          margin-top: 325px;
+          padding: 8px 0 4px 5px;
+          background-color: #13161a;
+          border-bottom-right-radius: 15px;
+          border-bottom-left-radius: 15px;
+
+          &.gradation-top {
+            margin-top: -60px;
+          }
+
+          .yl-transition-tab {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+
+            &:nth-child(2) {
+              margin-left: 28px;
+            }
+          }
+        }
+
+        .ant-empty {
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        .comp-ant-select .ant-select-selector {
+          width: 150px !important;
+          height: 40px !important;
+        }
+      }
+    }
+
+    .yl-comp-empty-line {
+      width: 100%;
+      height: 30px;
+    }
+  }
+
+  .yl-map-foundation .yl-comp-text-field {
+    padding: 5px 0;
+  }
+
+  .datai-edit-container {
+    width: 300px;
+    height: 450px;
+  }
+
+  .sketch-picker {
+    &.gradation-top {
+      margin-top: -385px;
+    }
+
+    &.top {
+      margin-top: -355px;
+    }
+  }
+
+  .hide-repeat-rect.pc-attr {
+    &.group,
+    &.com {
+      & > .yl-comp-config > div:nth-child(1) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.formWarp {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 5px;
+}
+
+.fromGroupWrap {
+  .formWarp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 16px;
+
+    .field {
+      width: 74px;
+
+      .fieldLabel {
+        display: none;
+      }
+
+      .fieldInput {
+        max-width: 103px !important;
+      }
+    }
+  }
+}
+
+.field {
+  align-items: unset;
+  width: 100%;
+  margin-bottom: 12px;
+
+  .fieldLabel {
+    width: auto !important;
+    padding-left: 12px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .fieldInput {
+    width: 190px;
+    padding-right: 13px;
+
+    > * {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.cardForm {
+  :global {
+    .ant-select-selection-placeholder {
+      color: #455166;
+    }
+
+    .ant-select-clear {
+      background: rgba(0, 0, 0, 0.88);
+
+      .anticon.anticon-close-circle {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+// 覆盖 src\components\AntdLibs\Form\Select\index.less 全局样式导致的污染
+.cardTypeDropdown {
+  :global {
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+      color: rgba(0, 0, 0, 0.85);
+      background-color: #e6f7ff;
+    }
+  }
+}

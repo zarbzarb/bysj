@@ -1,0 +1,383 @@
+.frame {
+  border-radius: 8px;
+
+  .animateStep {
+    padding: 5px 20px 5px 16px;
+    line-height: 20px;
+
+    :global {
+      div:nth-child(1) {
+        span.point {
+          display: inline-block;
+          float: left;
+          width: 6px;
+          height: 6px;
+          margin: 6px;
+          margin-left: -3px;
+          background: rgba(63, 181, 210, 1);
+          border-radius: 2px;
+        }
+
+        span.anticon {
+          font-size: 10px;
+        }
+      }
+
+      .ant-row {
+        margin-top: 10px;
+
+        > div:nth-child(1) {
+          line-height: 30px;
+        }
+
+        > div:nth-child(2).ant-col {
+          > div {
+            width: 100%;
+            margin: 0;
+          }
+        }
+      }
+
+      div span.putWay {
+        float: right;
+        width: auto;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 20px;
+        background: none;
+
+        &.deleteIcon {
+          margin-left: 10px;
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    &.hiddenStep {
+      padding-bottom: 5px;
+
+      :global {
+        .ant-row {
+          display: none;
+        }
+      }
+    }
+  }
+
+  div {
+    .radioCom {
+      width: 100%;
+      margin: 10px auto;
+      text-align: center;
+    }
+  }
+
+  :global {
+    .ant-collapse-content-box {
+      color: #fff;
+    }
+
+    .ant-collapse .ant-collapse-item > .ant-collapse-header {
+      height: 32px;
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 32px;
+      background: #373f51;
+      border-left: 2px solid #3fb5d2;
+
+      .ant-collapse-arrow {
+        top: 10px;
+      }
+    }
+
+    .ant-collapse .ant-collapse-item > .ant-collapse-content {
+      width: 100%;
+      background: #0d0f17;
+
+      > .ant-collapse-content-box {
+        padding: 0;
+
+        > .ant-row {
+          margin: 12px 0;
+        }
+
+        .addAnimateEvent {
+          width: 100%;
+          height: 30px;
+          margin: 10px 0 0 0;
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 12px;
+          background: #1d212f;
+          border: none;
+
+          span.anticon {
+            font-size: 11px;
+            // font-size: 4px;
+            // width: 7px;
+            // height: 7px;
+            // background: url('../../../../../assets/newIcon/plus.png');
+            // background-size: 100% 100%;
+          }
+        }
+      }
+
+      .ant-divider-horizontal {
+        width: calc(100% - 30px);
+        min-width: calc(100% - 30px);
+        margin: 10px 15px 10px 15px;
+        background: #222433;
+      }
+    }
+
+    .ant-table {
+      font-size: 12px;
+
+      .ant-table-thead > tr > th {
+        font-size: 12px;
+      }
+    }
+
+    .select.ant-select.ant-select-single:not(.ant-select-customize-input) {
+      width: calc(100% - 40px);
+      height: 34px;
+      margin: 10px 20px 0 20px;
+      line-height: 34px;
+
+      > .ant-select-selector {
+        height: 34px;
+        line-height: 34px;
+
+        .ant-select-selection-item {
+          height: 34px;
+          line-height: 34px;
+        }
+
+        .ant-select-selection-placeholder {
+          line-height: 34px;
+        }
+      }
+    }
+
+    .treeSelect.ant-select-single.ant-select-sm:not(.ant-select-customize-input) {
+      width: calc(100% - 40px);
+      height: 34px;
+      margin: 10px 20px;
+      line-height: 34px;
+
+      > .ant-select-selector {
+        height: 34px;
+        line-height: 34px;
+
+        .ant-select-selection-item {
+          height: 34px;
+          line-height: 34px;
+        }
+
+        .ant-select-selection-placeholder {
+          line-height: 34px;
+        }
+      }
+    }
+  }
+
+  span.deleteOut {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .secondCollapse {
+    &.selected {
+      border: 1px solid #3fb5d2 !important;
+    }
+
+    .ant-collapse-item > .ant-collapse-header {
+      color: #fff;
+      background: #1d212f;
+      border-left: none;
+
+      span {
+        left: 300px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      > div {
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.StartPosition {
+  margin: 12px 20px;
+  line-height: 32px;
+
+  :global {
+    .ant-col-2 {
+      text-align: center;
+    }
+
+    input {
+      height: 34px;
+      line-height: 34px;
+    }
+  }
+}
+
+.addEventDiv {
+  text-align: center;
+
+  & > *:nth-child(1) {
+    width: 309px !important;
+
+    height: 34px !important;
+    margin: 10px auto !important;
+    background: rgba(20, 81, 122, 0.5) !important;
+    border: 1px solid rgba(26, 114, 166, 1) !important;
+    border-radius: 1px !important;
+  }
+}
+
+.DependentComponent {
+  line-height: 32px;
+}
+
+.TreeSelectComponent {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+
+  .componentSelf {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    z-index: 1;
+    color: #08b5d8;
+    font-size: 12px;
+  }
+
+  :global {
+    .ant-tree-select {
+      width: 100%;
+    }
+  }
+}
+
+.test {
+  float: right;
+  margin-right: 5px;
+  line-height: 32px;
+
+  &:hover {
+    color: #08b5d8;
+  }
+}
+
+.delSecondCollapse {
+  float: right;
+  margin-right: 20px;
+  line-height: 34px !important;
+}
+
+.describe {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+
+  :global {
+    span {
+      display: block;
+      margin-bottom: 4px;
+      color: #fff;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+
+.button {
+  width: calc(100% - 44px) !important;
+  height: 32px !important;
+  margin: 22px !important;
+  color: #08b5d8 !important;
+  font-size: 14px !important;
+  background: rgba(118, 198, 234, 0.28) !important;
+  border: 1px solid #08b5d8 !important;
+  border-radius: 1px !important;
+}
+
+.interWraper {
+  height: calc(100vh - 124px);
+  overflow-y: auto;
+}
+
+:global {
+  .ant-select-dropdown {
+    z-index: 1061;
+  }
+
+  .yl-comp-basic-style {
+    .ant-btn.ant-btn-primary {
+      // height: 32px;
+      // background: rgba(118, 198, 234, 0.28);
+      // border-radius: 1px;
+      // color: #08b5d8;
+      // border: 1px solid #08b5d8;
+      // font-size: 14px;
+      // width: calc(100% - 44px);
+      // margin: 22px;
+      &.addAnimationBtn {
+        margin: 0;
+        color: #08b5d8;
+        background: none;
+        border: none;
+      }
+    }
+  }
+
+  input::-webkit-input-placeholder {
+    color: #fff;
+  }
+
+  .ant-popover-placement-bottomRight {
+    .ant-popover-content {
+      .ant-popover-arrow {
+        z-index: 213;
+        width: 12px;
+        height: 12px;
+        background: #001427;
+        border-top: 1px solid #3fb5d2;
+        border-left: 1px solid #3fb5d2;
+      }
+
+      .ant-popover-inner-content {
+        padding: 12px 10px;
+        border: 1px solid #3fb5d2;
+
+        .ant-popover-message {
+          > span {
+            display: none;
+          }
+
+          .ant-popover-message-title {
+            padding: 0;
+          }
+        }
+
+        .ant-popover-buttons {
+          .ant-btn.ant-btn-sm {
+            width: 56px;
+            height: 28px;
+            margin: auto;
+            margin-left: 6px;
+            color: #fff;
+            line-height: 28px;
+            border: 1px solid #0c3147;
+          }
+        }
+      }
+    }
+  }
+}

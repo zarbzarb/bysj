@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="62px" viewBox="0 0 92 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>贴图柱状图</title>
+    <defs>
+        <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#18DBEE" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#3AE2EE" stop-opacity="0.4" offset="81.9444322%"></stop>
+            <stop stop-color="#B6F8FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="8.7495584%" y1="36.7305307%" x2="97.314689%" y2="61.8058313%" id="linearGradient-2">
+            <stop stop-color="#60E1EB" offset="0%"></stop>
+            <stop stop-color="#37AFB7" offset="43.4228553%"></stop>
+            <stop stop-color="#97F4F8" offset="100%"></stop>
+        </linearGradient>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="10.9003855%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#00DBFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#15FFF1" offset="100%"></stop>
+        </linearGradient>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="41.3654304%" x2="50.4291093%" y2="60.2254276%" id="linearGradient-8">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#00FAFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="35.8436505%" x2="79.1387346%" y2="62.5425291%" id="linearGradient-10">
+            <stop stop-color="#C9F4FB" offset="2.31097028%"></stop>
+            <stop stop-color="#00C1E7" offset="37.4762458%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="0.125" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="35.8436505%" x2="79.1387346%" y2="62.5425291%" id="linearGradient-12">
+            <stop stop-color="#C9F4FB" offset="0%"></stop>
+            <stop stop-color="#00CEE7" offset="37.4762458%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-13">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-38.3%" y="-63.7%" width="176.5%" height="227.4%" filterUnits="objectBoundingBox" id="filter-14">
+            <feGaussianBlur stdDeviation="0.5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="10.2869596%" x2="50%" y2="100%" id="linearGradient-15">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#00F8FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="10.2869596%" x2="50%" y2="100%" id="linearGradient-16">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#00F8FF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-17">
+            <feGaussianBlur stdDeviation="0.125" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50.00078%" y2="99.3597236%" id="linearGradient-18">
+            <stop stop-color="#77F0F4" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#77F0F4" offset="89.3191527%"></stop>
+            <stop stop-color="#77F0F4" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-144.4%" y="-6.0%" width="388.9%" height="112.1%" filterUnits="objectBoundingBox" id="filter-19">
+            <feGaussianBlur stdDeviation="0.555555556" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50.0007432%" y2="99.3597236%" id="linearGradient-20">
+            <stop stop-color="#77F4F4" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#19EBFF" offset="78.014966%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.497353375" offset="89.0656691%"></stop>
+            <stop stop-color="#F4DF77" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-21">
+            <stop stop-color="#18DBEE" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#3AE2EE" stop-opacity="0.4" offset="81.9444322%"></stop>
+            <stop stop-color="#B6F8FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-22">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-23">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-24">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-25">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-26">
+            <feGaussianBlur stdDeviation="0.125" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-27">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-38.3%" y="-63.7%" width="176.5%" height="227.4%" filterUnits="objectBoundingBox" id="filter-28">
+            <feGaussianBlur stdDeviation="0.5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-29">
+            <feGaussianBlur stdDeviation="0.125" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50.0014014%" y2="99.3597236%" id="linearGradient-30">
+            <stop stop-color="#77F0F4" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#77F0F4" offset="89.3191527%"></stop>
+            <stop stop-color="#77F0F4" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-144.4%" y="-8.1%" width="388.9%" height="116.2%" filterUnits="objectBoundingBox" id="filter-31">
+            <feGaussianBlur stdDeviation="0.555555556" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50.001314%" y2="99.3597236%" id="linearGradient-32">
+            <stop stop-color="#77F4F4" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#19EBFF" offset="78.014966%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.497353375" offset="89.0656691%"></stop>
+            <stop stop-color="#F4DF77" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-33">
+            <stop stop-color="#18DBEE" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#3AE2EE" stop-opacity="0.4" offset="81.9444322%"></stop>
+            <stop stop-color="#B6F8FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-34">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-35">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-36">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-37">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-38">
+            <feGaussianBlur stdDeviation="0.125" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-39">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-38.3%" y="-63.7%" width="176.5%" height="227.4%" filterUnits="objectBoundingBox" id="filter-40">
+            <feGaussianBlur stdDeviation="0.5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-41">
+            <feGaussianBlur stdDeviation="0.125" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50.003221%" y2="99.3597236%" id="linearGradient-42">
+            <stop stop-color="#77F0F4" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#77F0F4" offset="89.3191527%"></stop>
+            <stop stop-color="#77F0F4" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-144.4%" y="-12.3%" width="388.9%" height="124.6%" filterUnits="objectBoundingBox" id="filter-43">
+            <feGaussianBlur stdDeviation="0.555555556" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50.0029237%" y2="99.3597236%" id="linearGradient-44">
+            <stop stop-color="#77F4F4" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#19EBFF" offset="78.014966%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.497353375" offset="89.0656691%"></stop>
+            <stop stop-color="#F4DF77" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-45">
+            <stop stop-color="#18DBEE" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#3AE2EE" stop-opacity="0.4" offset="81.9444322%"></stop>
+            <stop stop-color="#B6F8FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-46">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-47">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-48">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-49">
+            <feGaussianBlur stdDeviation="0.1875" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-50">
+            <feGaussianBlur stdDeviation="0.125" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-51">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-38.3%" y="-63.7%" width="176.5%" height="227.4%" filterUnits="objectBoundingBox" id="filter-52">
+            <feGaussianBlur stdDeviation="0.5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-53">
+            <feGaussianBlur stdDeviation="0.125" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50.0064788%" y2="99.3597236%" id="linearGradient-54">
+            <stop stop-color="#77F0F4" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#77F0F4" offset="89.3191527%"></stop>
+            <stop stop-color="#77F0F4" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-144.4%" y="-17.4%" width="388.9%" height="134.9%" filterUnits="objectBoundingBox" id="filter-55">
+            <feGaussianBlur stdDeviation="0.555555556" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50.005655%" y2="99.3597236%" id="linearGradient-56">
+            <stop stop-color="#77F4F4" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#19EBFF" offset="78.014966%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.497353375" offset="89.0656691%"></stop>
+            <stop stop-color="#F4DF77" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="组件icon" transform="translate(-3452, -1112)">
+            <g id="贴图柱状图" transform="translate(3453, 1113)">
+                <g id="编组-5">
+                    <rect id="矩形备份-28" stroke="#0C2C41" fill="#0C1923" opacity="0" x="0" y="0" width="90" height="60"></rect>
+                    <g id="条形图" transform="translate(16, 12)" fill="#3FB5D2" fill-rule="nonzero" opacity="0.600000024">
+                        <polygon id="路径" points="0 0 1 0 1 35 6.01518678e-17 35"></polygon>
+                        <polygon id="路径" points="0 35 58 35 58 36 1.87706959e-15 36"></polygon>
+                    </g>
+                </g>
+                <g id="编组-32备份-17" transform="translate(20, 13)">
+                    <g id="编组-30">
+                        <polygon id="矩形" fill="url(#linearGradient-1)" points="1.73484848 -3.78439481e-13 8.09848485 -3.78439481e-13 8.09848485 28.0620667 1.73484848 28.0620667"></polygon>
+                        <g id="编组-31" transform="translate(1.8182, 21.7125)" stroke-width="0.277777778">
+                            <ellipse id="椭圆形备份-4" stroke="url(#linearGradient-2)" opacity="0.818953741" filter="url(#filter-3)" cx="3.18181818" cy="6.40965259" rx="3.04292929" ry="1.69244042"></ellipse>
+                            <ellipse id="椭圆形备份-5" stroke="url(#linearGradient-4)" opacity="0.497724987" filter="url(#filter-5)" cx="3.18181818" cy="4.97075099" rx="3.04292929" ry="1.30001271"></ellipse>
+                            <ellipse id="椭圆形备份-6" stroke="url(#linearGradient-6)" opacity="0.153327579" filter="url(#filter-7)" cx="3.18181818" cy="3.00861244" rx="2.75367309" ry="1.16920348"></ellipse>
+                            <ellipse id="椭圆形备份-7" stroke="url(#linearGradient-8)" opacity="0.143824259" filter="url(#filter-9)" cx="3.18181818" cy="1.30809237" rx="2.75367309" ry="1.16920348"></ellipse>
+                        </g>
+                        <ellipse id="椭圆形备份-4" stroke="#94DDFF" stroke-width="0.444444444" fill-opacity="0.7" fill="#3AB8EE" opacity="0.2" cx="5" cy="28.1221968" rx="4.77777778" ry="2.65558098"></ellipse>
+                        <ellipse id="椭圆形备份-4" stroke="url(#linearGradient-10)" stroke-width="0.277777778" filter="url(#filter-11)" cx="5" cy="28.1221968" rx="3.04292929" ry="1.69244042"></ellipse>
+                        <ellipse id="椭圆形备份-4" stroke="url(#linearGradient-12)" stroke-width="0.277777778" filter="url(#filter-13)" cx="5" cy="28.1221968" rx="3.04292929" ry="1.69244042"></ellipse>
+                        <ellipse id="椭圆形" fill="#60EEFC" opacity="0.737118676" filter="url(#filter-14)" cx="4.93371212" cy="28.253006" rx="1.96022727" ry="1.17728313"></ellipse>
+                        <ellipse id="椭圆形备份-5" stroke="url(#linearGradient-15)" stroke-width="0.277777778" opacity="0.6" cx="5" cy="26.6832952" rx="3.04292929" ry="1.30001271"></ellipse>
+                        <ellipse id="椭圆形备份-6" stroke="url(#linearGradient-16)" stroke-width="0.277777778" opacity="0.4" cx="5" cy="24.7211566" rx="2.75367309" ry="1.16920348"></ellipse>
+                        <ellipse id="椭圆形备份-7" stroke="url(#linearGradient-16)" stroke-width="0.277777778" opacity="0.2" cx="5" cy="23.0206366" rx="2.75367309" ry="1.16920348"></ellipse>
+                    </g>
+                    <ellipse id="椭圆形" fill="#FFFFFF" opacity="0.495756603" filter="url(#filter-17)" cx="4.96875" cy="28.1560225" rx="1" ry="1"></ellipse>
+                    <polygon id="矩形" fill="url(#linearGradient-18)" filter="url(#filter-19)" points="4.75 0.685874766 5.30555556 0.685874766 5.30555556 28.2497845 4.75 28.2497845"></polygon>
+                    <polygon id="矩形" fill="url(#linearGradient-20)" points="4.75 0.133243187 5.30555556 0.133243187 5.30555556 28.3700853 4.75 28.3700853"></polygon>
+                </g>
+                <g id="编组-32备份-18" transform="translate(34, 20)">
+                    <g id="编组-30">
+                        <polygon id="矩形" fill="url(#linearGradient-21)" points="1.73484848 -3.23693177e-13 8.09848485 -3.23693177e-13 8.09848485 21.0620667 1.73484848 21.0620667"></polygon>
+                        <g id="编组-31" transform="translate(1.8182, 14.7125)" stroke-width="0.277777778">
+                            <ellipse id="椭圆形备份-4" stroke="url(#linearGradient-2)" opacity="0.818953741" filter="url(#filter-22)" cx="3.18181818" cy="6.40965259" rx="3.04292929" ry="1.69244042"></ellipse>
+                            <ellipse id="椭圆形备份-5" stroke="url(#linearGradient-4)" opacity="0.497724987" filter="url(#filter-23)" cx="3.18181818" cy="4.97075099" rx="3.04292929" ry="1.30001271"></ellipse>
+                            <ellipse id="椭圆形备份-6" stroke="url(#linearGradient-6)" opacity="0.153327579" filter="url(#filter-24)" cx="3.18181818" cy="3.00861244" rx="2.75367309" ry="1.16920348"></ellipse>
+                            <ellipse id="椭圆形备份-7" stroke="url(#linearGradient-8)" opacity="0.143824259" filter="url(#filter-25)" cx="3.18181818" cy="1.30809237" rx="2.75367309" ry="1.16920348"></ellipse>
+                        </g>
+                        <ellipse id="椭圆形备份-4" stroke="#94DDFF" stroke-width="0.444444444" fill-opacity="0.7" fill="#3AB8EE" opacity="0.2" cx="5" cy="21.1221968" rx="4.77777778" ry="2.65558098"></ellipse>
+                        <ellipse id="椭圆形备份-4" stroke="url(#linearGradient-10)" stroke-width="0.277777778" filter="url(#filter-26)" cx="5" cy="21.1221968" rx="3.04292929" ry="1.69244042"></ellipse>
+                        <ellipse id="椭圆形备份-4" stroke="url(#linearGradient-12)" stroke-width="0.277777778" filter="url(#filter-27)" cx="5" cy="21.1221968" rx="3.04292929" ry="1.69244042"></ellipse>
+                        <ellipse id="椭圆形" fill="#60EEFC" opacity="0.737118676" filter="url(#filter-28)" cx="4.93371212" cy="21.253006" rx="1.96022727" ry="1.17728313"></ellipse>
+                        <ellipse id="椭圆形备份-5" stroke="url(#linearGradient-15)" stroke-width="0.277777778" opacity="0.6" cx="5" cy="19.6832952" rx="3.04292929" ry="1.30001271"></ellipse>
+                        <ellipse id="椭圆形备份-6" stroke="url(#linearGradient-16)" stroke-width="0.277777778" opacity="0.4" cx="5" cy="17.7211566" rx="2.75367309" ry="1.16920348"></ellipse>
+                        <ellipse id="椭圆形备份-7" stroke="url(#linearGradient-16)" stroke-width="0.277777778" opacity="0.2" cx="5" cy="16.0206366" rx="2.75367309" ry="1.16920348"></ellipse>
+                    </g>
+                    <ellipse id="椭圆形" fill="#FFFFFF" opacity="0.495756603" filter="url(#filter-29)" cx="4.96875" cy="21.1560225" rx="1" ry="1"></ellipse>
+                    <polygon id="矩形" fill="url(#linearGradient-30)" filter="url(#filter-31)" points="4.75 0.685874766 5.30555556 0.685874766 5.30555556 21.2497845 4.75 21.2497845"></polygon>
+                    <polygon id="矩形" fill="url(#linearGradient-32)" points="4.75 0.133243187 5.30555556 0.133243187 5.30555556 21.3700853 4.75 21.3700853"></polygon>
+                </g>
+                <g id="编组-32备份-19" transform="translate(48, 27)">
+                    <g id="编组-30">
+                        <polygon id="矩形" fill="url(#linearGradient-33)" points="1.73484848 -4.26156282e-13 8.09848485 -4.26156282e-13 8.09848485 14.0620667 1.73484848 14.0620667"></polygon>
+                        <g id="编组-31" transform="translate(1.8182, 7.7125)" stroke-width="0.277777778">
+                            <ellipse id="椭圆形备份-4" stroke="url(#linearGradient-2)" opacity="0.818953741" filter="url(#filter-34)" cx="3.18181818" cy="6.40965259" rx="3.04292929" ry="1.69244042"></ellipse>
+                            <ellipse id="椭圆形备份-5" stroke="url(#linearGradient-4)" opacity="0.497724987" filter="url(#filter-35)" cx="3.18181818" cy="4.97075099" rx="3.04292929" ry="1.30001271"></ellipse>
+                            <ellipse id="椭圆形备份-6" stroke="url(#linearGradient-6)" opacity="0.153327579" filter="url(#filter-36)" cx="3.18181818" cy="3.00861244" rx="2.75367309" ry="1.16920348"></ellipse>
+                            <ellipse id="椭圆形备份-7" stroke="url(#linearGradient-8)" opacity="0.143824259" filter="url(#filter-37)" cx="3.18181818" cy="1.30809237" rx="2.75367309" ry="1.16920348"></ellipse>
+                        </g>
+                        <ellipse id="椭圆形备份-4" stroke="#94DDFF" stroke-width="0.444444444" fill-opacity="0.7" fill="#3AB8EE" opacity="0.2" cx="5" cy="14.1221968" rx="4.77777778" ry="2.65558098"></ellipse>
+                        <ellipse id="椭圆形备份-4" stroke="url(#linearGradient-10)" stroke-width="0.277777778" filter="url(#filter-38)" cx="5" cy="14.1221968" rx="3.04292929" ry="1.69244042"></ellipse>
+                        <ellipse id="椭圆形备份-4" stroke="url(#linearGradient-12)" stroke-width="0.277777778" filter="url(#filter-39)" cx="5" cy="14.1221968" rx="3.04292929" ry="1.69244042"></ellipse>
+                        <ellipse id="椭圆形" fill="#60EEFC" opacity="0.737118676" filter="url(#filter-40)" cx="4.93371212" cy="14.253006" rx="1.96022727" ry="1.17728313"></ellipse>
+                        <ellipse id="椭圆形备份-5" stroke="url(#linearGradient-15)" stroke-width="0.277777778" opacity="0.6" cx="5" cy="12.6832952" rx="3.04292929" ry="1.30001271"></ellipse>
+                        <ellipse id="椭圆形备份-6" stroke="url(#linearGradient-16)" stroke-width="0.277777778" opacity="0.4" cx="5" cy="10.7211566" rx="2.75367309" ry="1.16920348"></ellipse>
+                        <ellipse id="椭圆形备份-7" stroke="url(#linearGradient-16)" stroke-width="0.277777778" opacity="0.2" cx="5" cy="9.02063657" rx="2.75367309" ry="1.16920348"></ellipse>
+                    </g>
+                    <ellipse id="椭圆形" fill="#FFFFFF" opacity="0.495756603" filter="url(#filter-41)" cx="4.96875" cy="14.1560225" rx="1" ry="1"></ellipse>
+                    <polygon id="矩形" fill="url(#linearGradient-42)" filter="url(#filter-43)" points="4.75 0.685874766 5.30555556 0.685874766 5.30555556 14.2497845 4.75 14.2497845"></polygon>
+                    <polygon id="矩形" fill="url(#linearGradient-44)" points="4.75 0.133243187 5.30555556 0.133243187 5.30555556 14.3700853 4.75 14.3700853"></polygon>
+                </g>
+                <g id="编组-32备份-20" transform="translate(62, 31.1332)">
+                    <g id="编组-30" transform="translate(0, 0.8668)">
+                        <polygon id="矩形" fill="url(#linearGradient-45)" points="1.73484848 -4.8585493e-13 8.09848485 -4.8585493e-13 8.09848485 9.06206674 1.73484848 9.06206674"></polygon>
+                        <g id="编组-31" transform="translate(1.8182, 2.7125)" stroke-width="0.277777778">
+                            <ellipse id="椭圆形备份-4" stroke="url(#linearGradient-2)" opacity="0.818953741" filter="url(#filter-46)" cx="3.18181818" cy="6.40965259" rx="3.04292929" ry="1.69244042"></ellipse>
+                            <ellipse id="椭圆形备份-5" stroke="url(#linearGradient-4)" opacity="0.497724987" filter="url(#filter-47)" cx="3.18181818" cy="4.97075099" rx="3.04292929" ry="1.30001271"></ellipse>
+                            <ellipse id="椭圆形备份-6" stroke="url(#linearGradient-6)" opacity="0.153327579" filter="url(#filter-48)" cx="3.18181818" cy="3.00861244" rx="2.75367309" ry="1.16920348"></ellipse>
+                            <ellipse id="椭圆形备份-7" stroke="url(#linearGradient-8)" opacity="0.143824259" filter="url(#filter-49)" cx="3.18181818" cy="1.30809237" rx="2.75367309" ry="1.16920348"></ellipse>
+                        </g>
+                        <ellipse id="椭圆形备份-4" stroke="#94DDFF" stroke-width="0.444444444" fill-opacity="0.7" fill="#3AB8EE" opacity="0.2" cx="5" cy="9.1221968" rx="4.77777778" ry="2.65558098"></ellipse>
+                        <ellipse id="椭圆形备份-4" stroke="url(#linearGradient-10)" stroke-width="0.277777778" filter="url(#filter-50)" cx="5" cy="9.1221968" rx="3.04292929" ry="1.69244042"></ellipse>
+                        <ellipse id="椭圆形备份-4" stroke="url(#linearGradient-12)" stroke-width="0.277777778" filter="url(#filter-51)" cx="5" cy="9.1221968" rx="3.04292929" ry="1.69244042"></ellipse>
+                        <ellipse id="椭圆形" fill="#60EEFC" opacity="0.737118676" filter="url(#filter-52)" cx="4.93371212" cy="9.25300603" rx="1.96022727" ry="1.17728313"></ellipse>
+                        <ellipse id="椭圆形备份-5" stroke="url(#linearGradient-15)" stroke-width="0.277777778" opacity="0.6" cx="5" cy="7.68329519" rx="3.04292929" ry="1.30001271"></ellipse>
+                        <ellipse id="椭圆形备份-6" stroke="url(#linearGradient-16)" stroke-width="0.277777778" opacity="0.4" cx="5" cy="5.72115665" rx="2.75367309" ry="1.16920348"></ellipse>
+                        <ellipse id="椭圆形备份-7" stroke="url(#linearGradient-16)" stroke-width="0.277777778" opacity="0.2" cx="5" cy="4.02063657" rx="2.75367309" ry="1.16920348"></ellipse>
+                    </g>
+                    <ellipse id="椭圆形" fill="#FFFFFF" opacity="0.495756603" filter="url(#filter-53)" cx="4.96875" cy="10.0227793" rx="1" ry="1"></ellipse>
+                    <polygon id="矩形" fill="url(#linearGradient-54)" filter="url(#filter-55)" points="4.75 0.552631579 5.30555556 0.552631579 5.30555556 10.1165414 4.75 10.1165414"></polygon>
+                    <polygon id="矩形" fill="url(#linearGradient-56)" points="4.75 5.14699148e-14 5.30555556 5.14699148e-14 5.30555556 10.2368421 4.75 10.2368421"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

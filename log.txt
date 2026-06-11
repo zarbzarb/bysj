@@ -1,0 +1,289 @@
+react-dom.development.js:29850 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+log.js:39 [HMR] Waiting for update signal from WDS...
+index.tsx:572 Layout 渲染: Object
+index.tsx:650 Layout - 兜底渲染条件: Object
+index.tsx:170 getAppConfig 开始调用 Object
+index.tsx:187 当前配置信息: Object
+index.tsx:193 调用 getInfoById 接口
+index.tsx:195 getInfoById 返回: Object
+index.tsx:227 解析配置数据: Object
+index.tsx:239 configInfo 解析结果: Object
+index.tsx:253 组件数量: 2 数据类型: page isApp: true homePageId: screen_1778659985069
+index.tsx:320 开始加载通用资源...
+index.tsx:322 通用资源加载完成
+index.tsx:335 开始加载 datai 组件库...
+index.tsx:337 datai 组件库加载完成
+index.tsx:344 所有资源加载完成，准备渲染
+index.tsx:378 setAppInfo 已调用 - 新版应用 Object
+index.tsx:572 Layout 渲染: Object
+index.tsx:576 Layout - page 类型: Object
+HomePage.tsx:42 页面Id screen_1778659985069 ----page Object
+HomePage.tsx:42 页面Id screen_1778659985069 ----page Object
+HomePage.tsx:203 页面加载时间为：0.61 秒
+HomePage.tsx:205 ObjectappId: "screen_1778659985069"baseUrl: ""bucketName: "ioc-screen"dataType: 0dynamicApis: []environment: {cardList: true, indicator: true, sandboxMarket: true, cardMenu: true, pageLayoutType: true, …}favicon: "/assets/datai/icons/favicon.ico"filter: {switchVal: false, hueRotate: 0, saturation: 0, brightness: 0, contrastRatio: 0, …}fontVar: "font"fonts: []height: 1080homePageId: "screen_1778659985069"layerConfig: {defaultLayerId: '1', activeLayerId: '1', layers: Array(1)}loading: {backgroundColor: '#040C1F', imgSrc: '/assets/datai/icons/loading.png', resetPageType: true}mouseType: 1opacity: "1"ossProxy: ""pageId: "screen_1778916219320"pcSize: "1920X1080"preLoadResources: []scale: "initSize"screenBackground: "to bottom-#0d1117-#0d1117"screenBackgroundImage: ""scrollbar: {size: 6, bgColor: 'rgba(0,0,0,0.2)'}tenantId: "default"title: "面向数字孪生的低代码平台"width: 1920[[Prototype]]: Object
+CompRender.js:191 TypeError: Cannot set properties of undefined (setting 'screenConfig')
+    at CompRender.js:161:1
+    at commitHookEffectListMount (react-dom.development.js:23160:28)
+    at commitPassiveMountOnFiber (react-dom.development.js:24941:13)
+    at commitPassiveMountEffects_complete (react-dom.development.js:24901:11)
+    at commitPassiveMountEffects_begin (react-dom.development.js:24888:9)
+    at commitPassiveMountEffects (react-dom.development.js:24876:5)
+    at flushPassiveEffectsImpl (react-dom.development.js:27049:5)
+    at flushPassiveEffects (react-dom.development.js:26994:16)
+    at react-dom.development.js:26779:11
+    at workLoop (react.development.js:2653:36)
+(匿名) @ CompRender.js:191
+postMessage
+schedulePerformWorkUntilDeadline @ react.development.js:2961
+requestHostCallback @ react.development.js:2975
+unstable_scheduleCallback @ react.development.js:2828
+scheduleCallback$1 @ react-dom.development.js:27547
+ensureRootIsScheduled @ react-dom.development.js:25693
+scheduleUpdateOnFiber @ react-dom.development.js:25541
+dispatchSetState @ react-dom.development.js:17537
+(匿名) @ index.js:18
+Promise.then
+loadResource @ index.js:15
+(匿名) @ index.js:36
+commitHookEffectListMount @ react-dom.development.js:23160
+commitPassiveMountOnFiber @ react-dom.development.js:24941
+commitPassiveMountEffects_complete @ react-dom.development.js:24901
+commitPassiveMountEffects_begin @ react-dom.development.js:24888
+commitPassiveMountEffects @ react-dom.development.js:24876
+flushPassiveEffectsImpl @ react-dom.development.js:27049
+flushPassiveEffects @ react-dom.development.js:26994
+(匿名) @ react-dom.development.js:26779
+workLoop @ react.development.js:2653
+flushWork @ react.development.js:2626
+performWorkUntilDeadline @ react.development.js:2920
+postMessage
+schedulePerformWorkUntilDeadline @ react.development.js:2961
+requestHostCallback @ react.development.js:2975
+unstable_scheduleCallback @ react.development.js:2828
+scheduleCallback$1 @ react-dom.development.js:27547
+ensureRootIsScheduled @ react-dom.development.js:25693
+scheduleUpdateOnFiber @ react-dom.development.js:25541
+dispatchSetState @ react-dom.development.js:17537
+_callee$ @ HomePage.tsx:166
+tryCatch @ HomePage.tsx:2
+(匿名) @ HomePage.tsx:2
+(匿名) @ HomePage.tsx:2
+asyncGeneratorStep @ asyncToGenerator.js:4
+_next @ asyncToGenerator.js:18
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:9
+_next @ asyncToGenerator.js:18
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:9
+_next @ asyncToGenerator.js:18
+(匿名) @ asyncToGenerator.js:23
+(匿名) @ export.js:20
+(匿名) @ asyncToGenerator.js:15
+getPageInfo @ HomePage.tsx:95
+(匿名) @ HomePage.tsx:185
+commitHookEffectListMount @ react-dom.development.js:23160
+commitPassiveMountOnFiber @ react-dom.development.js:24941
+commitPassiveMountEffects_complete @ react-dom.development.js:24901
+commitPassiveMountEffects_begin @ react-dom.development.js:24888
+commitPassiveMountEffects @ react-dom.development.js:24876
+flushPassiveEffectsImpl @ react-dom.development.js:27049
+flushPassiveEffects @ react-dom.development.js:26994
+(匿名) @ react-dom.development.js:26779
+workLoop @ react.development.js:2653
+flushWork @ react.development.js:2626
+performWorkUntilDeadline @ react.development.js:2920
+postMessage
+schedulePerformWorkUntilDeadline @ react.development.js:2961
+performWorkUntilDeadline @ react.development.js:2925
+postMessage
+schedulePerformWorkUntilDeadline @ react.development.js:2961
+requestHostCallback @ react.development.js:2975
+unstable_scheduleCallback @ react.development.js:2828
+scheduleCallback$1 @ react-dom.development.js:27547
+ensureRootIsScheduled @ react-dom.development.js:25693
+scheduleUpdateOnFiber @ react-dom.development.js:25541
+dispatchSetState @ react-dom.development.js:17537
+_callee$ @ index.tsx:360
+tryCatch @ index.tsx:2
+(匿名) @ index.tsx:2
+(匿名) @ index.tsx:2
+asyncGeneratorStep @ asyncToGenerator.js:4
+_next @ asyncToGenerator.js:18
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:9
+_next @ asyncToGenerator.js:18
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:9
+_next @ asyncToGenerator.js:18
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:9
+_next @ asyncToGenerator.js:18
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:9
+_next @ asyncToGenerator.js:18
+(匿名) @ asyncToGenerator.js:23
+(匿名) @ export.js:20
+(匿名) @ asyncToGenerator.js:15
+(匿名) @ index.tsx:443
+commitHookEffectListMount @ react-dom.development.js:23160
+commitPassiveMountOnFiber @ react-dom.development.js:24941
+commitPassiveMountEffects_complete @ react-dom.development.js:24901
+commitPassiveMountEffects_begin @ react-dom.development.js:24888
+commitPassiveMountEffects @ react-dom.development.js:24876
+flushPassiveEffectsImpl @ react-dom.development.js:27049
+flushPassiveEffects @ react-dom.development.js:26994
+(匿名) @ react-dom.development.js:26779
+workLoop @ react.development.js:2653
+flushWork @ react.development.js:2626
+performWorkUntilDeadline @ react.development.js:2920
+postMessage
+schedulePerformWorkUntilDeadline @ react.development.js:2961
+performWorkUntilDeadline @ react.development.js:2925
+postMessage
+schedulePerformWorkUntilDeadline @ react.development.js:2961
+requestHostCallback @ react.development.js:2975
+unstable_scheduleCallback @ react.development.js:2828
+scheduleCallback$1 @ react-dom.development.js:27547
+ensureRootIsScheduled @ react-dom.development.js:25693
+scheduleUpdateOnFiber @ react-dom.development.js:25541
+updateContainer @ react-dom.development.js:28868
+ReactDOMHydrationRoot.render.ReactDOMRoot.render @ react-dom.development.js:29324
+(匿名) @ previewApp.tsx:24
+__webpack_require__ @ bootstrap:24
+(匿名) @ startup:4
+(匿名) @ chunk loaded:23
+(匿名) @ startup:7
+(匿名) @ startup:7
+CompRender.js:191 TypeError: Cannot set properties of undefined (setting 'screenConfig')
+    at CompRender.js:161:1
+    at commitHookEffectListMount (react-dom.development.js:23160:28)
+    at commitPassiveMountOnFiber (react-dom.development.js:24941:13)
+    at commitPassiveMountEffects_complete (react-dom.development.js:24901:11)
+    at commitPassiveMountEffects_begin (react-dom.development.js:24888:9)
+    at commitPassiveMountEffects (react-dom.development.js:24876:5)
+    at flushPassiveEffectsImpl (react-dom.development.js:27049:5)
+    at flushPassiveEffects (react-dom.development.js:26994:16)
+    at react-dom.development.js:26779:11
+    at workLoop (react.development.js:2653:36)
+(匿名) @ CompRender.js:191
+postMessage
+schedulePerformWorkUntilDeadline @ react.development.js:2961
+requestHostCallback @ react.development.js:2975
+unstable_scheduleCallback @ react.development.js:2828
+scheduleCallback$1 @ react-dom.development.js:27547
+ensureRootIsScheduled @ react-dom.development.js:25693
+scheduleUpdateOnFiber @ react-dom.development.js:25541
+dispatchSetState @ react-dom.development.js:17537
+(匿名) @ index.js:18
+Promise.then
+loadResource @ index.js:15
+(匿名) @ index.js:36
+commitHookEffectListMount @ react-dom.development.js:23160
+commitPassiveMountOnFiber @ react-dom.development.js:24941
+commitPassiveMountEffects_complete @ react-dom.development.js:24901
+commitPassiveMountEffects_begin @ react-dom.development.js:24888
+commitPassiveMountEffects @ react-dom.development.js:24876
+flushPassiveEffectsImpl @ react-dom.development.js:27049
+flushPassiveEffects @ react-dom.development.js:26994
+(匿名) @ react-dom.development.js:26779
+workLoop @ react.development.js:2653
+flushWork @ react.development.js:2626
+performWorkUntilDeadline @ react.development.js:2920
+postMessage
+schedulePerformWorkUntilDeadline @ react.development.js:2961
+requestHostCallback @ react.development.js:2975
+unstable_scheduleCallback @ react.development.js:2828
+scheduleCallback$1 @ react-dom.development.js:27547
+ensureRootIsScheduled @ react-dom.development.js:25693
+scheduleUpdateOnFiber @ react-dom.development.js:25541
+dispatchSetState @ react-dom.development.js:17537
+_callee$ @ HomePage.tsx:166
+tryCatch @ HomePage.tsx:2
+(匿名) @ HomePage.tsx:2
+(匿名) @ HomePage.tsx:2
+asyncGeneratorStep @ asyncToGenerator.js:4
+_next @ asyncToGenerator.js:18
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:9
+_next @ asyncToGenerator.js:18
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:9
+_next @ asyncToGenerator.js:18
+(匿名) @ asyncToGenerator.js:23
+(匿名) @ export.js:20
+(匿名) @ asyncToGenerator.js:15
+getPageInfo @ HomePage.tsx:95
+(匿名) @ HomePage.tsx:185
+commitHookEffectListMount @ react-dom.development.js:23160
+commitPassiveMountOnFiber @ react-dom.development.js:24941
+commitPassiveMountEffects_complete @ react-dom.development.js:24901
+commitPassiveMountEffects_begin @ react-dom.development.js:24888
+commitPassiveMountEffects @ react-dom.development.js:24876
+flushPassiveEffectsImpl @ react-dom.development.js:27049
+flushPassiveEffects @ react-dom.development.js:26994
+(匿名) @ react-dom.development.js:26779
+workLoop @ react.development.js:2653
+flushWork @ react.development.js:2626
+performWorkUntilDeadline @ react.development.js:2920
+postMessage
+schedulePerformWorkUntilDeadline @ react.development.js:2961
+performWorkUntilDeadline @ react.development.js:2925
+postMessage
+schedulePerformWorkUntilDeadline @ react.development.js:2961
+requestHostCallback @ react.development.js:2975
+unstable_scheduleCallback @ react.development.js:2828
+scheduleCallback$1 @ react-dom.development.js:27547
+ensureRootIsScheduled @ react-dom.development.js:25693
+scheduleUpdateOnFiber @ react-dom.development.js:25541
+dispatchSetState @ react-dom.development.js:17537
+_callee$ @ index.tsx:360
+tryCatch @ index.tsx:2
+(匿名) @ index.tsx:2
+(匿名) @ index.tsx:2
+asyncGeneratorStep @ asyncToGenerator.js:4
+_next @ asyncToGenerator.js:18
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:9
+_next @ asyncToGenerator.js:18
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:9
+_next @ asyncToGenerator.js:18
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:9
+_next @ asyncToGenerator.js:18
+Promise.then
+asyncGeneratorStep @ asyncToGenerator.js:9
+_next @ asyncToGenerator.js:18
+(匿名) @ asyncToGenerator.js:23
+(匿名) @ export.js:20
+(匿名) @ asyncToGenerator.js:15
+(匿名) @ index.tsx:443
+commitHookEffectListMount @ react-dom.development.js:23160
+commitPassiveMountOnFiber @ react-dom.development.js:24941
+commitPassiveMountEffects_complete @ react-dom.development.js:24901
+commitPassiveMountEffects_begin @ react-dom.development.js:24888
+commitPassiveMountEffects @ react-dom.development.js:24876
+flushPassiveEffectsImpl @ react-dom.development.js:27049
+flushPassiveEffects @ react-dom.development.js:26994
+(匿名) @ react-dom.development.js:26779
+workLoop @ react.development.js:2653
+flushWork @ react.development.js:2626
+performWorkUntilDeadline @ react.development.js:2920
+postMessage
+schedulePerformWorkUntilDeadline @ react.development.js:2961
+performWorkUntilDeadline @ react.development.js:2925
+postMessage
+schedulePerformWorkUntilDeadline @ react.development.js:2961
+requestHostCallback @ react.development.js:2975
+unstable_scheduleCallback @ react.development.js:2828
+scheduleCallback$1 @ react-dom.development.js:27547
+ensureRootIsScheduled @ react-dom.development.js:25693
+scheduleUpdateOnFiber @ react-dom.development.js:25541
+updateContainer @ react-dom.development.js:28868
+ReactDOMHydrationRoot.render.ReactDOMRoot.render @ react-dom.development.js:29324
+(匿名) @ previewApp.tsx:24
+__webpack_require__ @ bootstrap:24
+(匿名) @ startup:4
+(匿名) @ chunk loaded:23
+(匿名) @ startup:7
+(匿名) @ startup:7

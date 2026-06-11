@@ -1,0 +1,928 @@
+html,body {
+  line-height: 1;
+  /* background: rgb(13, 17, 23); */
+}
+
+.left {
+  text-align: left;
+}
+
+.chart-empty-p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+    height: 100%;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.display {
+  display: block !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-child-right {
+  justify-content: flex-end;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.line-height-initial {
+  line-height: initial;
+}
+
+.scroll-y {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.margin-none {
+  margin: 0 !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.h1 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.h4 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.h5 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.h6 {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.font1 {
+  font-size: 24px;
+}
+
+.font2 {
+  font-size: 20px;
+}
+
+.font3 {
+  font-size: 18px;
+}
+
+.font4 {
+  font-size: 16px;
+}
+
+.font5 {
+  font-size: 14px;
+}
+
+.font6 {
+  font-size: 12px;
+}
+
+.color1 {
+  color: #232426;
+}
+
+.color2 {
+  color: #303336;
+}
+
+.color3 {
+  color: #5c6268;
+}
+
+.color4 {
+  color: #8c939b;
+}
+
+.color5 {
+  color: #b8bec8;
+}
+
+.color6 {
+  color: #00b8e7;
+}
+
+.padding-none {
+  padding: 0 !important;
+}
+
+.padding-18 {
+  padding: 18px;
+}
+
+.padding-top-6 {
+  padding-top: 6px;
+}
+
+.padding-top-8 {
+  padding-top: 8px;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.padding-top-12 {
+  padding-top: 12px;
+}
+
+.padding-top-14 {
+  padding-top: 14px;
+}
+
+.padding-top-16 {
+  padding-top: 16px;
+}
+
+.padding-top-18 {
+  padding-top: 18px;
+}
+
+.padding-top-20 {
+  padding-top: 20px;
+}
+
+.padding-top-24 {
+  padding-top: 24px;
+}
+
+.padding-bottom-6 {
+  padding-bottom: 6px;
+}
+
+.padding-bottom-8 {
+  padding-bottom: 8px;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
+
+.padding-bottom-12 {
+  padding-bottom: 12px;
+}
+
+.padding-bottom-16 {
+  padding-bottom: 16px;
+}
+
+.padding-bottom-18 {
+  padding-bottom: 18px;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 20px;
+}
+
+.padding-bottom-24 {
+  padding-bottom: 24px;
+}
+
+.padding-left-6 {
+  padding-left: 6px;
+}
+
+.padding-left-8 {
+  padding-left: 8px;
+}
+
+.padding-left-10 {
+  padding-left: 10px;
+}
+
+.padding-left-12 {
+  padding-left: 12px;
+}
+
+.padding-left-16 {
+  padding-left: 16px;
+}
+
+.padding-left-18 {
+  padding-left: 18px;
+}
+
+.padding-left-20 {
+  padding-left: 20px;
+}
+
+.padding-left-24 {
+  padding-left: 24px;
+}
+
+.padding-right-6 {
+  padding-right: 6px;
+}
+
+.padding-right-8 {
+  padding-right: 8px;
+}
+
+.padding-right-10 {
+  padding-right: 10px;
+}
+
+.padding-right-12 {
+  padding-right: 12px;
+}
+
+.padding-right-16 {
+  padding-right: 16px;
+}
+
+.padding-right-18 {
+  padding-right: 18px;
+}
+
+.padding-right-20 {
+  padding-right: 20px;
+}
+
+.padding-right-24 {
+  padding-right: 24px;
+}
+
+.padding-about-6 {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.padding-about-8 {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.padding-about-10 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.padding-about-12 {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.padding-about-16 {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.padding-about-18 {
+  padding-right: 18px;
+  padding-left: 18px;
+}
+
+.padding-about-20 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.padding-about-24 {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.padding-updown-6 {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.padding-updown-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.padding-updown-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.padding-updown-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.padding-updown-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.padding-updown-18 {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.padding-updown-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.padding-updown-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.padding-12-20 {
+  padding: 12px 20px;
+}
+
+.padding-12-24 {
+  padding: 12px 24px;
+}
+
+.padding-16-24 {
+  padding: 16px 24px;
+}
+
+.padding-20-12 {
+  padding: 20px 12px;
+}
+
+.padding-24 {
+  padding: 24px;
+}
+
+.padding-bottom-none {
+  padding-bottom: none;
+}
+
+.margin-top-6 {
+  margin-top: 6px;
+}
+
+.margin-top-8 {
+  margin-top: 8px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-12 {
+  margin-top: 12px;
+}
+
+.margin-top-16 {
+  margin-top: 16px;
+}
+
+.margin-top-18 {
+  margin-top: 18px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-top-24 {
+  margin-top: 24px;
+}
+
+.margin-bottom-6 {
+  margin-bottom: 6px;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-12 {
+  margin-bottom: 12px;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 16px;
+}
+
+.margin-bottom-18 {
+  margin-bottom: 18px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-24 {
+  margin-bottom: 24px;
+}
+
+.margin-left-6 {
+  margin-left: 6px;
+}
+
+.margin-left-8 {
+  margin-left: 8px;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.margin-left-12 {
+  margin-left: 12px;
+}
+
+.margin-left-16 {
+  margin-left: 16px;
+}
+
+.margin-left-18 {
+  margin-left: 18px;
+}
+
+.margin-left-20 {
+  margin-left: 20px;
+}
+
+.margin-left-24 {
+  margin-left: 24px;
+}
+
+.margin-right-6 {
+  margin-right: 6px;
+}
+
+.margin-right-8 {
+  margin-right: 8px;
+}
+
+.margin-right-10 {
+  margin-right: 10px;
+}
+
+.margin-right-12 {
+  margin-right: 12px !important;
+}
+
+.margin-right-16 {
+  margin-right: 16px;
+}
+
+.margin-right-18 {
+  margin-right: 18px;
+}
+
+.margin-right-20 {
+  margin-right: 20px;
+}
+
+.margin-right-24 {
+  margin-right: 24px;
+}
+
+.margin-about-6 {
+  margin: 0 6px;
+}
+
+.margin-about-8 {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.margin-about-10 {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.margin-about-12 {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.margin-about-16 {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.margin-about-18 {
+  margin: 0 18px;
+}
+
+.margin-about-20 {
+  margin: 0 20px;
+}
+
+.margin-about-24 {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.margin-updown-6 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.margin-updown-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.margin-updown-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.margin-updown-12 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.margin-updown-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.margin-updown-18 {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.margin-updown-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.margin-updown-24 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.margin-12-20 {
+  margin: 20px 12px;
+}
+
+.margin-12-24 {
+  margin: 12px 24px;
+}
+
+.margin-16-24 {
+  margin: 16px 24px;
+}
+
+.margin-20-12 {
+  margin: 20px 12px;
+}
+
+.margin-24 {
+  margin: 24px;
+}
+
+.margin-bottom-none {
+  margin-bottom: none;
+}
+
+.white-bg {
+  background-color: #fff !important;
+}
+
+.none-bg {
+  background-color: transparent !important;
+}
+
+.row {
+  display: flex;
+}
+
+.flex {
+  flex:1;
+}
+
+.flex-1 {
+  flex:1;
+}
+
+/*
+* 滚动条
+*/
+
+/* 定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸 */
+::-webkit-scrollbar {
+  /* 滚动条整体部分，其中的属性有width,height,background,border等（就和一个块级元素一样）（位置1） */
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-button {
+  /* 滚动条两端的按钮，可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果（位置2） */
+    /* background: #74d334; */
+}
+
+::-webkit-scrollbar-track {
+  /* 外层轨道，可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果（位置3） */
+  background: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+  /* 内层轨道，滚动条中间部分（位置4） */
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  /* 滚动条里面可以拖动的那部分（位置5） */
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+  /* 边角（位置6） */
+  background: transparent;
+}
+
+::-webkit-scrollbar-resizer {
+  /* 定义右下角拖动块的样式（位置7） */
+  background: transparent;
+}
+
+
+/** 数据源兼容样式 */
+.bottom_button_bar {
+  z-index: 5 !important;
+}
+
+/** 默认 loading 效果 */
+.loading-css-wrap .loading-name {
+  margin-top: 20px;
+  color: transparent;
+  font-weight: bolder;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(79, 253, 253, 0.4);
+  background: linear-gradient(to right, #42C3FF, #006FCF);
+  background-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.loading-css-wrap .loading-css,
+.loading-css-wrap .loading-css>div {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.loading-css-wrap .loading-css {
+  display: block;
+  font-size: 0;
+}
+
+
+.loading-css-wrap .loading-css>div {
+  display: inline-block;
+  float: none;
+  background-color: currentColor;
+  border: 0 solid currentColor;
+}
+
+.loading-css-wrap .loading-css {
+  width: 128px;
+  height: 128px;
+}
+
+.loading-css-wrap .loading-css>div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  margin-left: -8px;
+  border-radius: 100%;
+  box-shadow: 0 0 30px #12d2c9;
+  /* animation: ball-spin-clockwise-fade 1.8s infinite linear; */
+}
+
+.loading-css-wrap .loading-css>div:nth-child(1) {
+  top: 8%;
+  left: 50%;
+  background: #0058C2;
+  animation: ball-spin-clockwise-fade1 1.8s infinite linear;
+  animation-delay: 0s;
+}
+
+.loading-css-wrap .loading-css>div:nth-child(2) {
+  top: 15%;
+  left: 71%;
+  background: #0058C2;
+  animation: ball-spin-clockwise-fade1 1.8s infinite linear;
+  animation-delay: 0.05s;
+}
+
+.loading-css-wrap .loading-css>div:nth-child(3) {
+  top: 30%;
+  left: 89%;
+  background: #0058C2;
+  animation: ball-spin-clockwise-fade1 1.8s infinite linear;
+  animation-delay: 0.1s;
+}
+
+.loading-css-wrap .loading-css>div:nth-child(4) {
+  top: 50%;
+  left: 94%;
+  background: #0058C2;
+  animation: ball-spin-clockwise-fade1 1.8s infinite linear;
+  animation-delay: 0.15s;
+}
+
+.loading-css-wrap .loading-css>div:nth-child(5) {
+  top: 70%;
+  left: 89%;
+  background: #0058C2;
+  animation: ball-spin-clockwise-fade1 1.8s infinite linear;
+  animation-delay: 0.1.8s;
+}
+
+.loading-css-wrap .loading-css>div:nth-child(6) {
+  top: 85%;
+  left: 71%;
+  background: #0058C2;
+  animation: ball-spin-clockwise-fade1 1.8s infinite linear;
+  animation-delay: 0.25s;
+}
+
+.loading-css-wrap .loading-css>div:nth-child(7) {
+  top: 92%;
+  left: 50.0000000005%;
+  background: #0058C2;
+  animation: ball-spin-clockwise-fade1 1.8s infinite linear;
+  animation-delay: 0.3s;
+}
+
+.loading-css-wrap .loading-css>div:nth-child(8) {
+  top: 85%;
+  left: 29%;
+  background: #0058C2;
+  animation: ball-spin-clockwise-fade1 1.8s infinite linear;
+  animation-delay: 0.35s;
+}
+
+.loading-css-wrap .loading-css>div:nth-child(9) {
+  top: 70%;
+  left: 11%;
+  background: #40FDFA;
+  animation: ball-spin-clockwise-fade1 1.8s infinite linear;
+  animation-delay: 0.4s;
+}
+
+.loading-css-wrap .loading-css>div:nth-child(10) {
+  top: 49.9999750815%;
+  left: 5.0000051215%;
+  background: #40FDFA;
+  animation: ball-spin-clockwise-fade2 1.8s infinite linear;
+  animation-delay: 0.45s;
+}
+
+.loading-css-wrap .loading-css>div:nth-child(11) {
+  top: 30%;
+  left: 11%;
+  background: #40FDFA;
+  animation: ball-spin-clockwise-fade2 1.8s infinite linear;
+  animation-delay: 0.5s;
+}
+
+.loading-css-wrap .loading-css>div:nth-child(12) {
+  top: 15%;
+  left: 29%;
+  background: #40FDFA;
+  animation: ball-spin-clockwise-fade2 1.8s infinite linear;
+  animation-delay: 0.55s;
+}
+
+@keyframes ball-spin-clockwise-fade1 {
+  0% {
+    background: #0058C2;
+    transform: scale(0);
+  }
+
+  5% {
+    background: #0058C2;
+    transform: scale(0.5);
+  }
+
+  15% {
+    background: #0058C2;
+    transform: scale(1);
+  }
+
+  65% {
+    background: #40FDFA;
+    transform: scale(1);
+  }
+
+  75% {
+    background: #40FDFA;
+    transform: scale(0.5);
+  }
+
+  80% {
+    background: #40FDFA;
+    transform: scale(0);
+  }
+
+  100% {
+    background: #40FDFA;
+    transform: scale(0);
+  }
+}
+
+@keyframes ball-spin-clockwise-fade2 {
+  0% {
+    background: #40FDFA;
+    transform: scale(0);
+  }
+
+  5% {
+    background: #40FDFA;
+    transform: scale(0.5);
+  }
+
+  15% {
+    background: #40FDFA;
+    transform: scale(1);
+  }
+
+  65% {
+    background: #0058C2;
+    transform: scale(1);
+  }
+
+  75% {
+    background: #0058C2;
+    transform: scale(0.5);
+  }
+
+    80% {
+      background: #0058C2;
+      transform: scale(0);
+    }
+
+    100% {
+      background: #0058C2;
+      transform: scale(0);
+    }
+    }

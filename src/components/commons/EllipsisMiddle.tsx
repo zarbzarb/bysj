@@ -1,0 +1,16 @@
+import React from 'react';
+import { Typography } from 'antd';
+
+const { Text } = Typography;
+
+const EllipsisMiddle: React.FC<{ suffixCount: number; children: string }> = ({ suffixCount, children }) => {
+  const start = children.slice(0, children.length - suffixCount);
+  const suffix = children.slice(-suffixCount).trim();
+  return (
+    <Text style={{ width: '200px', color: '#FFF' }} ellipsis={{ suffix }} copyable={{ text: children }}>
+      {start}
+    </Text>
+  );
+};
+
+export default EllipsisMiddle;

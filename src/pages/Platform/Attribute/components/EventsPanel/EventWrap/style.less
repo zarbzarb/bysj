@@ -1,0 +1,68 @@
+.Collapse-Panel {
+  :global {
+    .ant-collapse-content {
+      background-color: #171a21 !important;
+    }
+
+    .ant-collapse-content-box {
+      padding: 0 !important;
+
+      .ant-select-selection-placeholder {
+        position: absolute;
+        top: 50%;
+        inset-inline-start: 11px;
+        inset-inline-end: 11px;
+        transform: translateY(-50%);
+        transition: all 0.3s;
+      }
+    }
+
+    .ant-collapse-header {
+      position: sticky !important;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      background-color: #0d0f17;
+    }
+  }
+}
+
+.ButtonsGroup {
+  display: flex;
+  justify-content: space-around;
+  width: 107px;
+}
+
+.Auto-Complete {
+  :global {
+    .ant-select-selector {
+      height: 100% !important;
+    }
+  }
+}
+
+.popoverRewrite {
+  :global {
+    .ant-popover-inner {
+      padding: 0 !important;
+    }
+  }
+}
+
+.contextMenuWrap {
+  color: #bcc9d4 !important;
+  border-radius: 5px;
+
+  :global {
+    .ant-popover-inner {
+      padding: 0;
+    }
+  }
+}
+
+.scrollContainer {
+  scroll-behavior: smooth; /* 平滑滚动 */
+  scroll-snap-type: y mandatory; /* 纵向滚动时强制对齐到滚动容器的边界 */
+  scroll-snap-points-y: repeat(0); /* 设置滚动容器的刻度点，这里设置为顶部 */
+}

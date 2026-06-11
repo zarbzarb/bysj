@@ -1,0 +1,9 @@
+apiVersion: v2
+description: IOC控制台
+home: https://www.yunlizhihui.com
+icon: assistant.png
+maintainers:
+  - email: zhaowenchong@yunlizhihui.com
+    name: 赵文聪
+name: smart-visual-fe
+version: 2.0.2

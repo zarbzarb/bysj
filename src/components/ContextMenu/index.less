@@ -1,0 +1,40 @@
+.contextMenuWrap {
+  z-index: 300 !important;
+  color: #bcc9d4 !important;
+  background: #27343e !important;
+
+  :global {
+    .contexify_itemContent {
+      display: flex;
+      height: 28px;
+      padding: 0 6px;
+      padding-right: 3em;
+      overflow: hidden;
+      color: #bcc9d4;
+      line-height: 28px;
+      border-left: 2px solid transparent;
+    }
+
+    .contexify_item:not(.contexify_item-disabled):hover > .contexify_itemContent,
+    .contexify_item:not(.contexify_item-disabled):focus > .contexify_itemContent {
+      color: #2483ff;
+      background-color: #1d262e;
+      border-left: 2px solid #2483ff;
+    }
+  }
+}
+
+:global {
+  .contexify {
+    position: fixed;
+    z-index: 100;
+    box-sizing: border-box;
+    min-width: 200px;
+    padding: 6px 0;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}

@@ -1,0 +1,101 @@
+{{ if .Values.nginx.enabled }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Chart.Name }}
+data:
+  default.conf: |
+    server {
+        listen 80;
+        client_max_body_size 1024m;
+        root /opt/nginx/web;
+        index index.html;
+        {{- range .Values.nginx.proxy }}
+        location {{ .location }}  {
+            proxy_pass {{ .proxy_pass }};
+            proxy_set_header Host $host:$server_port;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header Range $http_range;
+            proxy_set_header If-Range $http_if_range;
+            proxy_no_cache $http_range $http_if_range;
+            {{- if eq .location "/auth/" }}
+            port_in_redirect off;
+            proxy_buffering off;
+            proxy_cache off;
+            {{- end }}
+        }
+        {{- end }}
+        location / {
+            try_files $uri $uri/ /index.html;
+        }
+    }
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: {{ .Chart.Name }}
+  name: {{ .Chart.Name }}
+spec:
+  ports:
+    - name: nginx80
+      port: 80
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: {{ .Chart.Name }}
+  type: {{ .Values.ServiceMode }}
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Chart.Name }}
+  labels:
+    app: {{ .Chart.Name }}
+    name: {{ .Chart.Name }}
+    group: ioc
+    apptype: iocweb
+    {{- if .Values.subChartName }}
+    subChart: {{ .Values.subChartName }}
+    {{- end }}
+spec:
+  replicas: {{ .Values.ReplicasMin }}
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}
+    spec:
+      containers:
+        - env:
+            - name: APP
+              value: {{ .Chart.Name }}
+          image: "{{ .Values.imageRegistry }}/{{ .Chart.Name }}:{{ .Values.appVersion | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          name: {{ .Chart.Name }}
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          volumeMounts:
+            - mountPath: /etc/nginx/conf.d
+              name: nginx-conf
+      volumes:
+        - name: nginx-conf
+          configMap:
+            name: {{ .Chart.Name }}
+            items:
+              - key: default.conf
+                path: default.conf
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+
+{{- end }}

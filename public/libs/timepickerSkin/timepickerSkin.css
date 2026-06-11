@@ -1,0 +1,149 @@
+.c-datepicker-date-wrap {
+  background: rgba(20, 29, 41, 1);
+  box-shadow: 0 2px 12px 0 rgba(1, 2, 2, 0.31);
+  border-radius: 4px;
+  padding: 12px 16px;
+  height: 100%;
+}
+
+.c-datepicker-date-editor {
+  background-color: rgba(39, 52, 73, 1);
+  border-radius: 4px;
+  border: 0;
+  color: #fff;
+}
+
+.c-datepicker-data-input {
+  background-color: rgba(39, 52, 73, 1);
+  color: rgba(123, 143, 169, 1);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c-datepicker-picker {
+  background: rgba(20, 29, 41, 1);
+  border: 0;
+  color: #fff;
+}
+
+.c-datepicker-picker__sidebar {
+  background: rgba(20, 29, 41, 1);
+  border: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c-datepicker-picker__shortcut {
+  color: #fff;
+  padding: 0 16px;
+}
+
+.c-datepicker-input {
+  background-color: rgba(39, 52, 73, 1);
+  color: rgba(123, 143, 169, 1);
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.c-datepicker-input__inner {
+  background-color: rgba(39, 52, 73, 1);
+  border: 0;
+  color: rgba(123, 143, 169, 1);
+}
+
+.c-datepicker-date-range-picker__time-header {
+  border-bottom: 0;
+}
+
+.c-datepicker-date-range-picker-panel__wrap.is-left {
+  border: 0;
+}
+
+.c-datepicker-date-table th {
+  border: 0;
+  color: #fff;
+}
+
+.c-datepicker-picker a {
+  color: #fff;
+}
+
+.c-datepicker-date-table td.next-month .cell,
+.c-datepicker-date-table td.prev-month .cell {
+  color: #8499b4;
+}
+
+.c-datepicker-date-table td.in-range div,
+.c-datepicker-date-table td.in-range div:hover {
+  background-color: rgba(44, 124, 255, 0.6);
+}
+
+.c-datepicker-date-table td.start-date div {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c-datepicker-date-table td.end-date div {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 0;
+}
+
+.c-datepicker-date-table td div {
+  padding: 0;
+}
+
+.c-datepicker-date-table td .cell {
+  width: 34px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 4px;
+}
+
+.c-datepicker-date-table td.current:not(.disabled) .cell {
+  background-color: #409eff;
+}
+
+.c-datepicker-picker__footer {
+  background-color: rgba(20, 29, 41, 1);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-color: rgba(39, 52, 73, 1);
+  padding: 12px 24px;
+  height: auto;
+  line-height: initial;
+  color: #fff;
+}
+
+.c-datepicker-button--mini {
+  padding: 0;
+  border: 0;
+  background: 0;
+  font-size: 14px;
+}
+
+.c-datepicker-button {
+  color: #fff;
+}
+
+.c-datepicker-button--text {
+  color: #8499b4;
+}
+
+.c-datepicker-button + .c-datepicker-button {
+  margin-left: 24px;
+}
+.c-datepicker-time-panel {
+  background: rgba(20, 29, 41, 1);
+  box-shadow: 0px 2px 12px 0px rgba(1, 2, 2, 0.31);
+  border: none;
+}
+.c-datepicker-time-spinner__item {
+  color: #fff;
+}
+.c-datepicker-time-panel__btn {
+  color: #fff;
+  border-bottom: none;
+  border-top-color: rgba(39, 52, 73, 1);
+}

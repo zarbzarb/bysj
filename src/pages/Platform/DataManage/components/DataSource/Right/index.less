@@ -1,0 +1,32 @@
+.rightWrap {
+  padding: 24px 24px 24px 30px;
+  // height: calc(100vh - 40px);
+  // overflow-y: scroll;
+  :global {
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+      border-color: #1890ff !important;
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      border-color: #1890ff !important;
+    }
+
+    .ant-radio-button-wrapper-checked:not(:first-child)::before {
+      background-color: #1890ff !important;
+    }
+  }
+
+  .table {
+    margin-top: 16px;
+
+    :global {
+      .ant-table-tbody > tr.ant-table-placeholder:hover > td {
+        background-color: none;
+      }
+    }
+  }
+
+  .line {
+    background-color: silver;
+  }
+}

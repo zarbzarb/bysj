@@ -1,0 +1,48 @@
+:global {
+  .manager-control {
+    height: 100vh;
+
+    .version-control {
+      height: calc(100vh - 64px);
+      padding: 20px;
+      background-color: #304a6f;
+
+      td,
+      th {
+        border-bottom: 0;
+      }
+
+      th {
+        color: #84a3cd;
+      }
+
+      td {
+        color: #fff;
+      }
+
+      .ant-table-thead {
+        tr {
+          th {
+            background: #171b21;
+          }
+        }
+      }
+
+      .ant-table-tbody {
+        tr:nth-child(odd) {
+          background: #2b4569;
+        }
+
+        tr:nth-child(even) {
+          background: #263e60;
+        }
+
+        tr:hover {
+          td {
+            background-color: #496b9c;
+          }
+        }
+      }
+    }
+  }
+}

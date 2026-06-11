@@ -1,0 +1,28 @@
+.handleWrap {
+  & > a:nth-child(1) {
+    margin-right: 4px;
+  }
+}
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+
+  .title {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin-right: 10px;
+      background: #3fb5d2;
+      border: 1px solid #abdae5;
+      border-radius: 1px;
+      content: '';
+    }
+  }
+}

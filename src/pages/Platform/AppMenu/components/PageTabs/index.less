@@ -1,0 +1,132 @@
+:global {
+  .ant-tabs.custom-page-tabs {
+    background: #1f212a;
+    border-top: 1px solid #383a41;
+  }
+
+  .ant-tabs-card.ant-tabs-top.custom-page-tabs > .ant-tabs-nav .ant-tabs-tab {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 128px;
+    margin: 0;
+    padding: 4px 6px 4px 14px;
+    background: #161820;
+    border: 0;
+    border-radius: 0;
+
+    &:hover {
+      background: #23252d;
+    }
+
+    span {
+      // width: 85px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .ant-tabs-tab-btn {
+      color: #fff;
+      outline: none !important;
+
+      .title-container {
+        display: flex;
+        justify-content: space-between;
+
+        .title-tip-text {
+          display: inline-block;
+          width: 91px;
+          overflow: hidden;
+          color: #fff;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        .yellow-circle {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          margin: auto;
+          background: #ffb53e;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .ant-tabs-tab-remove {
+      width: auto;
+      margin-left: 0;
+      color: #00e2ff;
+    }
+  }
+
+  .ant-tabs-card.ant-tabs-top.custom-page-tabs > .ant-tabs-nav .ant-tabs-tab-active {
+    background: #2f3347;
+    border-top: 1px solid #3fb5d2;
+
+    &:hover {
+      background: #2f3347;
+    }
+
+    border-bottom-color: #1f212a;
+
+    .ant-tabs-tab-btn {
+      color: #fff;
+    }
+  }
+
+  .custom-page-tabs {
+    .ant-tabs-nav {
+      margin-bottom: 0 !important;
+
+      .ant-tabs-nav-wrap {
+        background: #1f212a;
+
+        .ant-tabs-tab-remove {
+          .close-icon-tab {
+            width: 14px;
+            height: 14px;
+            margin: auto;
+          }
+
+          .close-icon-tab-outer {
+            display: flex;
+            justify-content: center;
+            width: 14px;
+            height: 22px;
+          }
+
+          .yellow-circle-outer {
+            display: flex;
+            justify-content: center;
+            width: 14px;
+            height: 22px;
+
+            .yellow-circle {
+              display: inline-block;
+              width: 8px;
+              height: 8px;
+              margin: auto;
+              background: #ffb53e;
+              border-radius: 50%;
+            }
+
+            .close-icon-tab {
+              display: none;
+            }
+
+            &:hover {
+              .close-icon-tab {
+                display: block;
+              }
+
+              .yellow-circle {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

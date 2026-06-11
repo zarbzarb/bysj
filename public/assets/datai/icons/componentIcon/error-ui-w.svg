@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="524px" height="360px" viewBox="0 0 524 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <g id="标准组件样式" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="控件" transform="translate(-1600.000000, -183.000000)">
+            <g id="编组" transform="translate(1580.000000, 163.000000)">
+                <g id="编组-2" transform="translate(20.000000, 20.000000)">
+                    <rect id="矩形" fill="#2986CC" x="0" y="0" width="36" height="36"></rect>
+                    <rect id="矩形备份-4" fill="#2986CC" x="46" y="0" width="36" height="36"></rect>
+                    <rect id="矩形备份-5" fill="#2986CC" x="92" y="0" width="36" height="36"></rect>
+                    <rect id="矩形备份-6" fill="#2986CC" x="138" y="0" width="36" height="36"></rect>
+                    <rect id="矩形备份" fill="#1E557E" x="0" y="60" width="524" height="20"></rect>
+                    <rect id="矩形备份-2" fill="#1E557E" x="0" y="100" width="450" height="20"></rect>
+                    <rect id="矩形备份-16" fill="#1E557E" x="0" y="220" width="240" height="20"></rect>
+                    <rect id="矩形备份-3" fill="#1E557E" x="0" y="140" width="360" height="20"></rect>
+                    <rect id="矩形备份-17" fill="#1E557E" x="0" y="260" width="180" height="20"></rect>
+                    <rect id="矩形备份-7" fill="#1E557E" x="0" y="180" width="290" height="20"></rect>
+                    <rect id="矩形备份-18" fill="#1E557E" x="0" y="300" width="120" height="20"></rect>
+                    <rect id="矩形备份-19" fill="#1E557E" x="0" y="340" width="70" height="20"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

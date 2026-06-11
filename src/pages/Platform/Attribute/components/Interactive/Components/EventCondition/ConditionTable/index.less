@@ -1,0 +1,57 @@
+.editorParamsTable {
+  .switchIcon {
+    position: relative;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .operationIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 16px;
+      cursor: pointer;
+    }
+  }
+
+  :global {
+    .ant-table {
+      background-color: #0d2e3f !important;
+    }
+
+    .ant-modal .ant-table.ant-table-bordered .ant-table-container {
+      border: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > thead > tr > th {
+      border-right: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table.ant-table-small thead > tr > th {
+      text-align: center;
+      background-color: #0d2e3f !important;
+      border-bottom: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > tbody > tr > td {
+      border-right: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table tbody > tr > td {
+      border-bottom: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table tbody > tr.ant-table-row:hover > td {
+      background-color: #0d2e3f !important;
+    }
+
+    .ant-table tbody .ant-input::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}

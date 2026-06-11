@@ -1,0 +1,186 @@
+:global {
+  .app-config-container {
+    width: 100% !important;
+    min-height: calc(100vh - 108px) !important;
+    background: #f5f5f5 !important;
+    padding: 24px !important;
+
+    .toolbar {
+      display: flex !important;
+      gap: 12px !important;
+      margin-bottom: 12px !important;
+    }
+
+    .toolbar button {
+      color: #666 !important;
+      background: #fff !important;
+      border-color: #d9d9d9 !important;
+    }
+
+    .toolbar button:hover {
+      background: #f5f5f5 !important;
+      border-color: #1890ff !important;
+      color: #1890ff !important;
+    }
+
+    .search-bar {
+      display: flex !important;
+      align-items: center !important;
+      gap: 12px !important;
+      padding: 12px 16px !important;
+      background: #fff !important;
+      border-radius: 4px !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+      margin-bottom: 16px !important;
+
+      .search-select {
+        width: 140px !important;
+      }
+
+      .search-input {
+        width: 200px !important;
+      }
+
+      .platform-label {
+        color: #666 !important;
+        font-size: 14px !important;
+        padding: 4px 12px !important;
+        background: #f5f5f5 !important;
+        border-radius: 4px !important;
+      }
+
+      button {
+        color: #666 !important;
+        background: #fff !important;
+        border-color: #d9d9d9 !important;
+      }
+
+      button:hover {
+        background: #f5f5f5 !important;
+        border-color: #1890ff !important;
+        color: #1890ff !important;
+      }
+
+      button.ant-btn-primary {
+        color: #fff !important;
+        background: #1890ff !important;
+        border-color: #1890ff !important;
+      }
+
+      button.ant-btn-primary:hover {
+        color: #fff !important;
+        background: #40a9ff !important;
+        border-color: #40a9ff !important;
+      }
+
+      input {
+        color: #333 !important;
+      }
+
+      select {
+        color: #333 !important;
+      }
+    }
+
+    .screen-grid {
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+      gap: 16px !important;
+      margin-bottom: 24px !important;
+
+      .screen-card {
+        background: #1a1a2e !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        cursor: pointer !important;
+        transition: transform 0.3s, box-shadow 0.3s !important;
+        position: relative !important;
+        min-height: 200px !important;
+        display: flex !important;
+        flex-direction: column !important;
+
+        &:hover {
+          transform: translateY(-4px) !important;
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+        }
+
+        .screen-header {
+          display: flex !important;
+          justify-content: space-between !important;
+          align-items: center !important;
+          padding: 12px !important;
+          background: #16162a !important;
+
+          .screen-name {
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            color: #fff !important;
+          }
+        }
+
+        .screen-thumbnail {
+          flex: 1 !important;
+          background: #1a1a2e !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+
+          .thumbnail-text {
+            font-size: 18px !important;
+            color: #666 !important;
+          }
+        }
+
+        .screen-info {
+          padding: 8px 12px !important;
+          background: #16162a !important;
+
+          .screen-time {
+            display: block !important;
+            font-size: 12px !important;
+            color: #666 !important;
+          }
+        }
+
+        .screen-actions {
+          display: none !important;
+          justify-content: flex-start !important;
+          align-items: center !important;
+          gap: 12px !important;
+          padding: 10px 12px !important;
+          background: #16162a !important;
+          border-top: 1px solid #2a2a4a !important;
+        }
+
+        &:hover .screen-info {
+          display: none !important;
+        }
+
+        &:hover .screen-actions {
+          display: flex !important;
+        }
+
+        .screen-actions button {
+          color: #888 !important;
+          background: transparent !important;
+          border: none !important;
+          font-size: 16px !important;
+          padding: 6px !important;
+          border-radius: 4px !important;
+          transition: all 0.2s !important;
+
+          &:hover {
+            color: #fff !important;
+            background: rgba(255, 255, 255, 0.1) !important;
+          }
+        }
+      }
+    }
+
+    .pagination {
+      display: flex !important;
+      justify-content: center !important;
+      margin-top: 24px !important;
+    }
+  }
+}

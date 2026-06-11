@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>del</title>
+    <desc>Created with Sketch.</desc>
+    <g id="del" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10,7 L10,6 C10,5.44771525 10.4477153,5 11,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,7 L25.5,7 C26.3284271,7 27,7.67157288 27,8.5 C27,9.32842712 26.3284271,10 25.5,10 L6.5,10 C5.67157288,10 5,9.32842712 5,8.5 C5,7.67157288 5.67157288,7 6.5,7 L10,7 Z M8.5,11 L23.5,11 C24.3284271,11 25,11.6715729 25,12.5 L25,25.5 C25,26.3284271 24.3284271,27 23.5,27 L8.5,27 C7.67157288,27 7,26.3284271 7,25.5 L7,12.5 C7,11.6715729 7.67157288,11 8.5,11 Z" id="形状结合" fill="#2483FF"></path>
+    </g>
+</svg>

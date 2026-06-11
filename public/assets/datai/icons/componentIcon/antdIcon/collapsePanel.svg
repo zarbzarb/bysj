@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="62px" viewBox="0 0 92 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>表格组件备份</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="组件icon" transform="translate(-2603, -149)">
+            <g id="表格组件备份" transform="translate(2604, 150)">
+                <rect id="矩形备份-15" stroke="#0C2C41" fill="#0C1923" opacity="0" x="0" y="0" width="90" height="60"></rect>
+                <g id="编组" transform="translate(15, 10)">
+                    <path d="M59.7177004,0.25 L59.7497968,39.75 L0.25,39.75 L0.25,0.25 L59.7177004,0.25 Z" id="形状" stroke="#3FB5D2" stroke-width="0.5" fill-rule="nonzero"></path>
+                    <g id="编组-16" transform="translate(4.1379, 3.878)">
+                        <polygon id="矩形备份-4" stroke="#3FB5D2" stroke-width="0.2" fill-opacity="0.18979458" fill="#3FB5D2" fill-rule="nonzero" points="0 0 45.798406 -1.82171351e-15 45.798406 5 0 5"></polygon>
+                        <rect id="矩形备份-51" fill="#3FB5D2" x="1.86206897" y="2.12195122" width="9" height="1" rx="0.5"></rect>
+                        <polygon id="矩形备份-79" stroke="#3FB5D2" stroke-width="0.2" fill-opacity="0.18979458" fill="#3FB5D2" fill-rule="nonzero" points="45.7983024 1.21447567e-15 52 0 52 5 45.7983024 5"></polygon>
+                        <path d="M48.7954075,3.09669681 C48.8130804,3.11286597 48.8370618,3.12195122 48.862069,3.12195122 C48.8870761,3.12195122 48.9110575,3.11286597 48.9287304,3.09669681 L49.8346666,2.26876582 C49.8614472,2.24414574 49.8694314,2.20723669 49.8549164,2.17515569 C49.8404014,2.14307469 49.8062265,2.12209697 49.7682407,2.12195122 L47.9558972,2.12195122 C47.9179114,2.12209697 47.8837365,2.14307469 47.8692215,2.17515569 C47.8547066,2.20723669 47.8626908,2.24414574 47.8894713,2.26876582 L48.7954075,3.09669681 Z" id="路径" fill="#5AC2D0" fill-rule="nonzero" transform="translate(48.8621, 2.622) scale(1, -1) rotate(-180) translate(-48.8621, -2.622)"></path>
+                    </g>
+                    <g id="编组-16备份" transform="translate(4.1379, 11.878)">
+                        <polygon id="矩形备份-4" stroke="#3FB5D2" stroke-width="0.2" fill="#3FB5D2" fill-rule="nonzero" points="0 0 46 0 46 5 0 5"></polygon>
+                        <rect id="矩形备份-51" fill="#FFFFFF" x="1.86206897" y="2.12195122" width="9" height="1" rx="0.5"></rect>
+                        <polygon id="矩形备份-79" stroke="#3FB5D2" stroke-width="0.2" fill-opacity="0.18979458" fill="#3FB5D2" fill-rule="nonzero" points="45.7983024 1.21447567e-15 52 0 52 5 45.7983024 5"></polygon>
+                        <path d="M48.7954075,3.09669681 C48.8130804,3.11286597 48.8370618,3.12195122 48.862069,3.12195122 C48.8870761,3.12195122 48.9110575,3.11286597 48.9287304,3.09669681 L49.8346666,2.26876582 C49.8614472,2.24414574 49.8694314,2.20723669 49.8549164,2.17515569 C49.8404014,2.14307469 49.8062265,2.12209697 49.7682407,2.12195122 L47.9558972,2.12195122 C47.9179114,2.12209697 47.8837365,2.14307469 47.8692215,2.17515569 C47.8547066,2.20723669 47.8626908,2.24414574 47.8894713,2.26876582 L48.7954075,3.09669681 Z" id="路径" fill="#5AC2D0" fill-rule="nonzero" transform="translate(48.8621, 2.622) rotate(-180) translate(-48.8621, -2.622)"></path>
+                    </g>
+                    <polygon id="矩形备份-5" fill="#3FB5D2" opacity="0.26" points="4 18 20.64 18 20.64 36 4 36"></polygon>
+                    <rect id="矩形备份-60" fill-opacity="0.505080857" fill="#D8D8D8" opacity="0.392351017" x="7" y="22" width="11" height="4" rx="1"></rect>
+                    <rect id="矩形备份-126" fill-opacity="0.505080857" fill="#D8D8D8" opacity="0.392351017" x="25" y="22" width="11" height="4" rx="1"></rect>
+                    <rect id="矩形备份-126" fill-opacity="0.505080857" fill="#D8D8D8" opacity="0.392351017" x="42" y="22" width="11" height="4" rx="1"></rect>
+                    <rect id="矩形备份-126" fill-opacity="0.505080857" fill="#D8D8D8" opacity="0.392351017" x="42" y="29" width="11" height="4" rx="1"></rect>
+                    <rect id="矩形备份-125" fill-opacity="0.505080857" fill="#D8D8D8" opacity="0.392351017" x="7" y="29" width="11" height="4" rx="1"></rect>
+                    <rect id="矩形备份-127" fill-opacity="0.505080857" fill="#D8D8D8" opacity="0.392351017" x="25" y="29" width="11" height="4" rx="1"></rect>
+                    <polygon id="矩形备份-54" fill="#3FB5D2" opacity="0.26" points="21.68 18 38.32 18 38.32 36 21.68 36"></polygon>
+                    <polygon id="矩形备份-57" fill="#3FB5D2" opacity="0.26" points="39.36 18 56 18 56 36 39.36 36"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

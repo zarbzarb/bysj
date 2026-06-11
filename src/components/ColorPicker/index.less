@@ -1,0 +1,32 @@
+:global {
+  .color-picker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    // .sketch-picker {
+    //   position: relative !important;
+    // }
+    .color-picker-preview {
+      width: 25px;
+      height: 25px;
+      padding: 2px;
+      border: 1px solid #383a41;
+      border-right: none;
+
+      & > div {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .ant-input {
+      border-radius: 0;
+    }
+  }
+
+  .color-sketch-picker {
+    position: relative !important;
+  }
+}

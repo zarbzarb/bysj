@@ -1,0 +1,71 @@
+.dynamic {
+  .field {
+    align-items: unset;
+    width: 100%;
+    margin-bottom: 12px;
+
+    .fieldLabel {
+      padding-left: 8px;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    .antdFieldInput {
+      & > div {
+        width: 100%;
+      }
+    }
+
+    .fieldInput {
+      padding-right: 16px;
+    }
+  }
+}
+
+.wrap {
+  height: calc(700px);
+  //top: 44px;
+  .tabPanel {
+    display: flex;
+    // width: 100vw;
+    height: calc(540px - 40px);
+  }
+
+  .leftWrap,
+  .leftWrap1,
+  .rightWrap {
+    height: 100%;
+    overflow-x: hidden; // 避免横向滚动
+    overflow-y: auto;
+    // background: #161820;
+    // border-radius: 1px 0px 1px 1px;
+    background: rgba(#0d2e3f, 0.6);
+    border: 1px solid #1e628b;
+  }
+
+  .leftWrap {
+    width: 260px;
+    margin-right: 10px;
+  }
+
+  .leftWrap1 {
+    width: 260px;
+    // margin-right: 10px;
+  }
+
+  .rightWrap {
+    flex: 1;
+  }
+
+  :global {
+    .ant-drawer-content {
+      overflow-x: hidden;
+      background: #000 !important;
+
+      .ant-drawer-body {
+        display: flex;
+        padding: 1px 10px 0 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+/* 轮播滚动文本组件样式 Plugin CSS */
+:global {
+  .str_wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    zoom: 1;
+  }
+
+  .str_move {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    cursor: move;
+  }
+
+  .str_move_clone {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: inline-block;
+    // vertical-align: top;
+  }
+
+  .str_vertical .str_move_clone {
+    top: 100%;
+    left: 0;
+  }
+
+  .str_down .str_move_clone {
+    bottom: 100%;
+    left: 0;
+  }
+
+  .str_vertical .str_move,
+  .str_down .str_move {
+    width: 100%;
+    white-space: normal;
+  }
+
+  .str_static .str_move,
+  .no_drag .str_move,
+  .noStop .str_move {
+    cursor: inherit;
+  }
+
+  .str_wrap img {
+    max-width: none !important;
+  }
+}

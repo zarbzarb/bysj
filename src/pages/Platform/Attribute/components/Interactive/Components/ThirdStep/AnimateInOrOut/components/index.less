@@ -1,0 +1,33 @@
+.animteRow {
+  height: 34px;
+  padding: 0 23px;
+  color: rgba(255, 255, 255, 0.7);
+
+  .label {
+    line-height: 26px !important;
+  }
+
+  .unitText {
+    margin-left: 4px;
+    color: #fff;
+  }
+
+  & > * {
+    &:nth-child(1) {
+      line-height: 34px;
+      user-select: none;
+    }
+
+    &:nth-child(2) {
+      & > * {
+        width: 198px !important;
+        border: none !important;
+      }
+    }
+  }
+
+  .endInput {
+    width: 72px !important;
+    border: none;
+  }
+}

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Chart.Name }}-gatewayfragment
+  labels:
+    gatewayfragment: "datai"
+data:
+  gatewayfragment: |
+    static:
+    - location: /visual-console/
+      image: {{ .Values.imageRegistry }}/{{ .Chart.Name }}:{{ .Values.appVersion | default .Chart.AppVersion }}
+      name: smart-visual-fe

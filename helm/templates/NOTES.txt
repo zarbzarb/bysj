@@ -1,0 +1,1 @@
+LINK: index|API|swagger-ui.html|http://{{ .Values.ingress.domain }}/{{ .Values.ingress.path }}

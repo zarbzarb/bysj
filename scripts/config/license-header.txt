@@ -1,0 +1,6 @@
+/**
+ * @license
+ * 孔雀大屏RenderEngine <%= version %> 
+ * Copyright Yunlizhihui, Inc. <https://yunlizhihui.com>"
+ * Available under Apache License Version 2.0
+ */

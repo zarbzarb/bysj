@@ -1,0 +1,47 @@
+.left {
+  height: 100%;
+  overflow-y: scroll;
+
+  .title {
+    width: 260px;
+    height: 32px;
+    line-height: 32px;
+    background: rgba(255, 255, 255, 0.04);
+
+    span {
+      padding-left: 20px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  .treeWrap {
+    height: calc(100% - 32px);
+    padding: 10px 10px 10px 20px;
+    overflow: auto;
+    font-family: MicrosoftYaHei, sans-serif; // Sonar add one generic font family
+
+    :global {
+      .ant-tree-node-content-wrapper:hover,
+      .ant-tree-node-content-wrapper-normal:hover {
+        background: rgba(0, 0, 0, 1);
+      }
+
+      .ant-tree-node-content-wrapper.ant-tree-node-selected {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .ant-tree-treenode {
+        display: flex;
+        width: 100%;
+
+        .ant-tree-node-content-wrapper {
+          flex: 1 1;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}

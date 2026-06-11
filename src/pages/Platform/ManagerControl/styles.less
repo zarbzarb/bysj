@@ -1,0 +1,47 @@
+.topKitBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+
+  li {
+    width: 40px;
+    height: 24px;
+    background: rgba(5, 22, 34, 0.3);
+    border: 1px solid #07465c;
+    border-radius: 1px;
+
+    &:hover {
+      background: rgba(17, 95, 113, 0.3);
+      border: 1px solid #07465c;
+    }
+
+    &:active {
+      background: #0095b4;
+      border: 1px solid #0095b4;
+    }
+
+    & > img {
+      width: 14px !important;
+      height: 14px !important;
+    }
+  }
+}
+
+.versionSelect {
+  margin-right: 2px;
+
+  :global {
+    .ant-select-selector {
+      width: 126px;
+      height: 24px;
+      background: #03050a;
+      border: 1px solid #383a41;
+      border-radius: 2px;
+
+      &:hover {
+        border: 1px solid #07465c;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link id="datai-favicon" href="<%= publicPath %>favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="<%= publicPath %>css/reset.css" />
+    <title id="datai-title"></title>
+    <style>
+      #i-loading {
+        background: #fff;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        z-index: 999;
+        transition: all .5s ease-out
+      }
+    
+      #i-loading .loading-center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <script>
+    // 记录页面开始加载的时间
+    const startTime = performance.now();
+    window.startTime = startTime
+  </script>
+  <body>
+    <div id="preApp"></div>
+    <div id="i-loading" style="background: #040C1F; display: none;">
+          <div class="loading-center">
+            <!-- 配置加载页设置显示的 loading 图片 -->
+            <img class="loading-img" style="display: none;" />
+            <!-- loading-css 是没保存加载页配置时候显示的 loading 样式，减少请求  -->
+            <div class="loading-css-wrap" style="display: none;">
+              <div class="loading-css">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="loading-name">加载中</div>
+            </div>
+          </div>
+        </div>
+    <script>
+      window.publicPath = '<%= publicPath %>'; // 运行时前端目录,部署在非根目录下方便查找前端资源
+    </script>
+    <script src="<%= publicPath %>libs/loading.js"></script>
+    
+    <% if(process.env.NODE_ENV === 'production') { %>
+      <script src="<%= publicPath %>libs/react/react.min.js"></script>
+      <script src="<%= publicPath %>libs/react/react-dom.js"></script>
+    <% } else { %>
+      <script src="<%= publicPath %>libs/react/react.development.js"></script>
+      <script src="<%= publicPath %>libs/react/react-dom.development.js"></script>
+    <% } %>
+  </body>
+
+</html>

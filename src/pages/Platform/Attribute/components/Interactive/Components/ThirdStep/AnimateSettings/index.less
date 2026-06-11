@@ -1,0 +1,46 @@
+// .Collapse {
+//   :global {
+//     .anticon {
+//     }
+//   }
+// }
+.animateStep {
+  & > * {
+    &:nth-child(1) {
+      align-items: center !important;
+      padding-left: 22px !important;
+      background: transparent !important;
+    }
+  }
+}
+
+.stepAddBtn {
+  padding: 10px 0 8px;
+  text-align: center;
+}
+
+.animateStepHeader {
+  display: flex;
+  padding-left: 0;
+  color: rgba(255, 255, 255, 0.7);
+
+  .leftTitle {
+    flex: 1;
+  }
+
+  &::before {
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #3fb5d2;
+    content: '';
+  }
+}
+
+.headerOperation {
+  float: right;
+  margin-right: 8px;
+}

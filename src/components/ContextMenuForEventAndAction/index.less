@@ -1,0 +1,42 @@
+.contextMenuWrap {
+  color: #79bac3;
+  font-size: small;
+  background: #171a21 !important;
+  border: solid 1px #213a46;
+
+  .contextMenuOption {
+    display: flex;
+    height: 28px;
+    padding: 0 6px;
+    padding-right: 3em;
+    overflow: hidden;
+    color: #bcc9d4;
+    line-height: 28px;
+    border-left: 2px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      background-color: #1a2e36;
+    }
+  }
+
+  :global {
+    .contexify_itemContent {
+      display: flex;
+      height: 28px;
+      padding: 0 6px;
+      padding-right: 3em;
+      overflow: hidden;
+      color: #bcc9d4;
+      line-height: 28px;
+      border-left: 2px solid transparent;
+    }
+
+    .contexify_item:not(.contexify_item-disabled):hover > .contexify_itemContent,
+    .contexify_item:not(.contexify_item-disabled):focus > .contexify_itemContent {
+      color: white;
+      background-color: #1d262e;
+    }
+  }
+}

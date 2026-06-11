@@ -1,0 +1,94 @@
+.wrap {
+  .table {
+    margin-top: 10px;
+  }
+
+  .handleWrap {
+    & > a:nth-child(1) {
+      margin-right: 6px;
+    }
+  }
+
+  .titleWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-right: 10px;
+        background: #3fb5d2;
+        border: 1px solid #abdae5;
+        border-radius: 1px;
+        content: '';
+      }
+    }
+  }
+}
+
+.configMapWrap {
+  :global {
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+      border-color: #1890ff !important;
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      border-color: #1890ff !important;
+    }
+
+    .ant-radio-button-wrapper-checked:not(:first-child)::before {
+      background-color: #1890ff !important;
+    }
+
+    .ant-radio-button-wrapper {
+      padding-right: 30px !important;
+      padding-left: 30px !important;
+    }
+  }
+
+  .formWrap {
+    margin-top: 10px;
+
+    :global {
+      .ant-form-item-explain,
+      .ant-form-item-extra {
+        margin-bottom: 0;
+        color: #ff4d4f !important;
+        font-size: 12px !important;
+      }
+
+      .ant-select-tree .ant-select-tree-node-content-wrapper:hover,
+      .ant-select-tree .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+        background: #201e16;
+      }
+
+      .ant-select-tree .ant-select-tree-treenode-active .ant-select-tree-node-content-wrapper {
+        background: #201e16;
+      }
+
+      .ant-select-dropdown {
+        background-color: #141414;
+      }
+    }
+
+    .code {
+      :global {
+        .monaco-editor .margin {
+          background-color: #000 !important;
+        }
+
+        .monaco-editor,
+        .monaco-editor-background,
+        .monaco-editor .inputarea.ime-input {
+          background-color: #000 !important;
+        }
+      }
+    }
+  }
+}

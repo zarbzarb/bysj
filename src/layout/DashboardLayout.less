@@ -1,0 +1,274 @@
+:global {
+  body .ant-modal-confirm {
+    .ant-modal-confirm-body-wrapper {
+      background: #fff !important;
+
+      .ant-modal-confirm-title {
+        color: #333 !important;
+      }
+
+      .ant-modal-confirm-content {
+        color: #666 !important;
+      }
+
+      .ant-modal-confirm-icon {
+        color: #ff4d4f !important;
+      }
+
+      .ant-modal-confirm-icon svg {
+        color: #ff4d4f !important;
+        fill: #ff4d4f !important;
+      }
+
+      .ant-modal-confirm-icon svg path {
+        fill: #ff4d4f !important;
+        color: #ff4d4f !important;
+      }
+    }
+  }
+
+  body .dashboard-wrapper .ant-modal-wrap .ant-modal,
+  body .dashboard-wrapper .ant-modal {
+    color: #333 !important;
+
+    &,
+    & > * {
+      background: #fff !important;
+    }
+
+    .ant-modal-header {
+      background: #fff !important;
+      border-bottom: 1px solid #e8e8e8 !important;
+
+      .ant-modal-title {
+        color: #333 !important;
+      }
+    }
+
+    .ant-modal-content {
+      background-color: #fff !important;
+      border-radius: 4px !important;
+      border: 1px solid #e8e8e8 !important;
+    }
+
+    .ant-modal-body {
+      background: #fff !important;
+
+      * {
+        background: #fff !important;
+        color: #333 !important;
+      }
+
+      .ant-form-item-label {
+        color: #666 !important;
+      }
+
+      .ant-form-item-label > label {
+        color: #666 !important;
+      }
+
+      .ant-input {
+        color: #333 !important;
+        background: #fff !important;
+        border-color: #d9d9d9 !important;
+      }
+
+      .ant-input:focus {
+        border-color: #1890ff !important;
+        box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1) !important;
+      }
+
+      .ant-input-password {
+        color: #333 !important;
+        background: #fff !important;
+      }
+
+      .ant-input-affix-wrapper {
+        background: #fff !important;
+        border-color: #d9d9d9 !important;
+        border-radius: 4px !important;
+
+        > .ant-input {
+          background: #fff !important;
+          color: #333 !important;
+          border: none !important;
+        }
+
+        &::after {
+          display: none !important;
+        }
+      }
+
+      .ant-input-affix-wrapper:focus,
+      .ant-input-affix-wrapper-focused {
+        border-color: #1890ff !important;
+        box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1) !important;
+      }
+
+      .ant-select-selector {
+        color: #333 !important;
+        background: #fff !important;
+        border-color: #d9d9d9 !important;
+      }
+
+      .ant-btn-primary {
+        color: #fff !important;
+        background: #1890ff !important;
+        border-color: #1890ff !important;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input {
+        background: #fff !important;
+        color: #333 !important;
+        border-color: #d9d9d9 !important;
+      }
+    }
+
+    .ant-modal-footer {
+      background: #fff !important;
+      border-top: 1px solid #e8e8e8 !important;
+    }
+  }
+
+  .dashboard-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100vh !important;
+    background: #f5f5f5 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    position: relative !important;
+    z-index: 1 !important;
+  }
+
+  .dashboard-wrapper * {
+    box-sizing: border-box !important;
+  }
+
+  .dashboard-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 60px !important;
+    padding: 0 24px !important;
+    background: linear-gradient(90deg, #1e3a5f, #2c5282) !important;
+    color: #fff !important;
+    flex-shrink: 0 !important;
+    position: relative !important;
+    z-index: 100 !important;
+  }
+
+  .dashboard-header h1 {
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin: 0 !important;
+    line-height: 60px !important;
+  }
+
+  .dashboard-header .user-dropdown {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    cursor: pointer !important;
+    padding: 8px 12px !important;
+    border-radius: 4px !important;
+    transition: background 0.3s !important;
+    color: #fff !important;
+  }
+
+  .dashboard-header .user-dropdown:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .dashboard-header .user-dropdown svg {
+    font-size: 16px !important;
+    color: #fff !important;
+  }
+
+  .dashboard-header .user-dropdown span {
+    color: #fff !important;
+    font-size: 14px !important;
+  }
+
+  .dashboard-body {
+    display: flex !important;
+    flex: 1 !important;
+    overflow: hidden !important;
+    background: #f5f5f5 !important;
+  }
+
+  .dashboard-sidebar {
+    width: 200px !important;
+    background: #fff !important;
+    border-right: 1px solid #e8e8e8 !important;
+    padding-top: 16px !important;
+    flex-shrink: 0 !important;
+    overflow-y: auto !important;
+  }
+
+  .dashboard-sidebar .sidebar-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 12px 24px !important;
+    cursor: pointer !important;
+    color: #666 !important;
+    font-size: 14px !important;
+    transition: all 0.3s !important;
+    border-left: 3px solid transparent !important;
+  }
+
+  .dashboard-sidebar .sidebar-item:hover {
+    background: #f0f0f0 !important;
+    color: #1890ff !important;
+  }
+
+  .dashboard-sidebar .sidebar-item.active {
+    background: #e6f7ff !important;
+    color: #1890ff !important;
+    border-left-color: #1890ff !important;
+  }
+
+  .dashboard-sidebar .sidebar-item svg {
+    font-size: 16px !important;
+  }
+
+  .dashboard-content {
+    flex: 1 !important;
+    padding: 24px !important;
+    overflow-y: auto !important;
+    background: #f5f5f5 !important;
+  }
+
+  .dashboard-wrapper .ant-modal-confirm {
+    .ant-modal-confirm-body-wrapper {
+      background: #fff !important;
+
+      .ant-modal-confirm-title {
+        color: #333 !important;
+      }
+
+      .ant-modal-confirm-content {
+        color: #666 !important;
+      }
+
+      .ant-modal-confirm-icon {
+        color: #ff4d4f !important;
+      }
+
+      .ant-modal-confirm-icon svg {
+        color: #ff4d4f !important;
+        fill: #ff4d4f !important;
+      }
+
+      .ant-modal-confirm-icon svg path {
+        fill: #ff4d4f !important;
+        color: #ff4d4f !important;
+      }
+    }
+  }
+}

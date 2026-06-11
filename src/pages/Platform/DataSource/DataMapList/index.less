@@ -1,0 +1,99 @@
+.tableWrap {
+  max-height: 342px;
+
+  :global {
+    .ant-table {
+      background-color: #0d2e3f !important;
+    }
+
+    .ant-table-container {
+      border-radius: 0 !important;
+    }
+
+    .ant-table.ant-table-bordered .ant-table-container {
+      border: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > thead > tr > th {
+      border-right: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table.ant-table-small thead > tr > th {
+      background-color: #0d2e3f !important;
+      border-bottom: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table-cell-ellipsis {
+      background-color: rgb(20, 20, 20) !important;
+      border-bottom: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table-row-selected > .ant-table-cell {
+      background-color: #0d2e3f !important;
+      border-bottom: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content {
+      overflow: auto !important;
+    }
+
+    .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table > tbody > tr > td {
+      border-right: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table tbody > tr > td {
+      border-bottom: 1px solid #1a4b68 !important;
+    }
+
+    .ant-table tbody > tr.ant-table-row:hover > td {
+      background-color: #164d69 !important;
+    }
+  }
+}
+
+.resizableWrap {
+  :global {
+    /* 内容过多以...显示 */
+    .ellipsisText {
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    /* 显示拖拽样式 */
+    .react-resizable {
+      position: relative;
+      background-clip: padding-box;
+    }
+    // /* 显示拖拽手势 */
+    // .react-resizable-handle-e {
+    //   position: absolute;
+    //   width: 10px;
+    //   height: 100%;
+    //   top: 0;
+    //   left: 0;
+    //   cursor: col-resize;
+    //   z-index: 6;
+    // }
+    /* 显示拖拽手势 */
+    .react-resizable-handle {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 6;
+      width: 10px;
+      height: 100%;
+      cursor: col-resize;
+    }
+    // .react-resizable-handle:hover {
+    // }
+  }
+}
+
+.pagination {
+  :global {
+    .ant-pagination-item {
+      border-radius: 0 !important;
+    }
+  }
+}

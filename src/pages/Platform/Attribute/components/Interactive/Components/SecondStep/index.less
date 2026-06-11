@@ -1,0 +1,98 @@
+.emptyNotice {
+  padding: 0 48px 0;
+  font-size: 12px;
+}
+
+.addAction {
+  width: 100% !important;
+  height: 30px !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 12px;
+  background: #1d212f !important;
+  border: none !important;
+}
+
+.eventControllerButton {
+  padding: 2px 0 !important;
+}
+
+.operationContainer {
+  float: right;
+
+  .operationIcon {
+    margin-left: 6px;
+    font-size: 14px;
+
+    &:hover {
+      color: #08b5d8;
+    }
+  }
+}
+
+.vetInput {
+  width: 160px !important;
+  height: 22px;
+}
+
+.selectAction {
+  padding: 8px 24px;
+
+  .select {
+    width: 100%;
+  }
+}
+
+.dashedDivider {
+  border-color: silver;
+  border-style: dashed;
+  border-width: 1px 0 0;
+}
+
+:global {
+  .ant-collapse {
+    border: none !important;
+  }
+
+  .ant-collapse > .ant-collapse-item {
+    border-radius: 0;
+  }
+
+  .eventActive {
+    border: px solid #3fb5d2 !important;
+  }
+
+  .antd-dark .ant-input-affix-wrapper > input.ant-input {
+    border: none !important;
+  }
+
+  .eventActionGroupTabs {
+    .ant-tabs-nav {
+      height: auto;
+      margin-bottom: 0;
+      padding: 8px 12px;
+    }
+  }
+}
+
+.eventHeader {
+  border: 1px solid transparent;
+
+  & > *:nth-child(1) {
+    align-items: center !important;
+    height: 32px;
+    padding: 6px 16px !important;
+    background: #373f51 !important;
+
+    :global {
+      .ant-collapse-expand-icon {
+        padding-right: 4px !important;
+      }
+    }
+  }
+
+  :global {
+    .ant-collapse-content-box {
+      padding: 0 !important;
+    }
+  }
+}

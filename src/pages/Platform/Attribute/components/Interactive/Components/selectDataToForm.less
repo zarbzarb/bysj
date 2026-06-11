@@ -1,0 +1,178 @@
+.listenContainer {
+  padding: 12px 23px 12px;
+  color: rgba(255, 255, 255, 0.7);
+
+  .listenValueRow {
+    margin-top: 8px;
+
+    .input {
+      width: 196px;
+    }
+  }
+}
+
+.demo {
+  overflow-y: auto;
+  color: #fff;
+  background: #0d0f17;
+
+  .field {
+    align-items: unset;
+    width: 100%;
+    margin: 12px 0;
+
+    .fieldLabel {
+      margin-left: 18px;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    .antdFieldInput {
+      & > div {
+        width: 100%;
+      }
+    }
+
+    .fieldInput {
+      width: 201.45px;
+      margin-right: 20px;
+    }
+  }
+
+  .sizeField {
+    .twoInput {
+      width: 80px;
+      margin-right: 0;
+
+      &:nth-child(1) {
+        margin-bottom: 8px;
+      }
+
+      &:nth-child(odd) {
+        margin-right: 16px;
+      }
+    }
+
+    & > * {
+      width: 80px;
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .opacityField {
+    & > * {
+      &:nth-child(1) {
+        float: left;
+        width: 80px;
+      }
+
+      &:nth-child(2) {
+        width: 80px;
+      }
+    }
+  }
+
+  .overflowField {
+    & > * {
+      width: 100%;
+    }
+  }
+
+  .borderField {
+    & > * {
+      &:nth-child(1) {
+        width: 100%;
+        margin-right: 16px;
+        margin-bottom: 14px;
+      }
+
+      &:nth-child(2) {
+        float: left;
+        width: 47px;
+        margin-right: 0;
+        margin-right: 12px;
+
+        :global {
+          .color-preview {
+            float: left;
+          }
+        }
+
+        input {
+          width: 50px;
+        }
+      }
+
+      &:nth-child(3) {
+        display: inline-block;
+        float: left;
+        width: 87px;
+        margin-right: 12px;
+
+        :global {
+          .color-preview {
+            float: left;
+          }
+        }
+
+        input {
+          width: 50px;
+        }
+      }
+    }
+  }
+
+  .borderRadiusField {
+    & > * {
+      &:nth-child(1) {
+        width: 87px;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .paddingField {
+    & > * {
+      width: 87px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .marginField {
+    & > * {
+      width: 87px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .alignField {
+    & > * {
+      margin-right: 8px;
+      color: #56575c;
+      font-size: 22px;
+      cursor: pointer;
+
+      &.active,
+      &:hover {
+        color: #3fb5d2;
+      }
+    }
+  }
+
+  .fieldShadow {
+    & > * {
+      margin-right: 8px;
+      font-size: 24px;
+    }
+  }
+
+  .shadowModalPanel {
+    width: 200px;
+  }
+}
